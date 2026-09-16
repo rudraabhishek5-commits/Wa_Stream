@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="1b46604c49f6488585e99905d729f5a9" extends="task" label="Royalty Agreement" name="x_2015479_wa_str_0_royalty_agr" type="collection">
+        <element label="Expiry Date" name="expiry_date" type="glide_date"/>
+        <element label="Agreement Type" name="agreement_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Cover Version" sequence="2" value="cover"/>
+                <element inactive_on_update="false" label="Original Work" sequence="1" value="original"/>
+                <element inactive_on_update="false" label="Collaboration" sequence="4" value="collaboration"/>
+                <element inactive_on_update="false" label="Remix" sequence="3" value="remix"/>
+            </choice>
+        </element>
+        <element label="Effective Date" name="effective_date" type="glide_date"/>
+        <element default="draft" label="Agreement Status" name="agreement_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Void" sequence="6" value="void"/>
+                <element inactive_on_update="false" label="Partially Signed" sequence="3" value="partially_signed"/>
+                <element inactive_on_update="false" label="Draft" sequence="1" value="draft"/>
+                <element inactive_on_update="false" label="Pending Signatures" sequence="2" value="pending_signatures"/>
+                <element inactive_on_update="false" label="Fully Signed" sequence="4" value="fully_signed"/>
+                <element inactive_on_update="false" label="Expired" sequence="5" value="expired"/>
+            </choice>
+        </element>
+        <element label="Agreement Notes" name="agreement_notes" type="journal_input"/>
+        <element label="Total Split %" name="total_split_pct" read_only="true" read_only_option="instance_configured" type="decimal"/>
+        <element label="Song" mandatory="true" name="song" reference="x_2015479_wa_str_0_song" type="reference"/>
+    </element>
+</database>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="genre" table="x_2015479_wa_str_0_song" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>genre</element>
+            <name>x_2015479_wa_str_0_song</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-09-16 13:46:32</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>genre</sys_name>
+            <sys_package display_value="Wa_Stream" source="x_2015479_wa_str_0">2258db6693138310b29a796efaba10e8</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Wa_Stream">2258db6693138310b29a796efaba10e8</sys_scope>
+            <sys_update_name>sys_choice_x_2015479_wa_str_0_song_genre</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-09-16 13:46:32</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>genre</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Bollywood</label>
+            <language>en</language>
+            <name>x_2015479_wa_str_0_song</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-09-16 13:46:32</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-09-16 13:46:32</sys_updated_on>
+            <value>bollywood</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>genre</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Indie Pop</label>
+            <language>en</language>
+            <name>x_2015479_wa_str_0_song</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-09-16 13:46:32</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-09-16 13:46:32</sys_updated_on>
+            <value>indie_pop</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>genre</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Classical</label>
+            <language>en</language>
+            <name>x_2015479_wa_str_0_song</name>
+            <sequence>3</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-09-16 13:46:32</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-09-16 13:46:32</sys_updated_on>
+            <value>classical</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>genre</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Folk</label>
+            <language>en</language>
+            <name>x_2015479_wa_str_0_song</name>
+            <sequence>4</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-09-16 13:46:32</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-09-16 13:46:32</sys_updated_on>
+            <value>folk</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>genre</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Devotional</label>
+            <language>en</language>
+            <name>x_2015479_wa_str_0_song</name>
+            <sequence>5</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-09-16 13:46:32</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-09-16 13:46:32</sys_updated_on>
+            <value>devotional</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>genre</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Fusion</label>
+            <language>en</language>
+            <name>x_2015479_wa_str_0_song</name>
+            <sequence>6</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-09-16 13:46:32</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-09-16 13:46:32</sys_updated_on>
+            <value>fusion</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>genre</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Hip-Hop</label>
+            <language>en</language>
+            <name>x_2015479_wa_str_0_song</name>
+            <sequence>7</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-09-16 13:46:32</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-09-16 13:46:32</sys_updated_on>
+            <value>hiphop</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>genre</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Regional</label>
+            <language>en</language>
+            <name>x_2015479_wa_str_0_song</name>
+            <sequence>8</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-09-16 13:46:32</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-09-16 13:46:32</sys_updated_on>
+            <value>regional</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>genre</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Other</label>
+            <language>en</language>
+            <name>x_2015479_wa_str_0_song</name>
+            <sequence>9</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-09-16 13:46:32</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-09-16 13:46:32</sys_updated_on>
+            <value>other</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

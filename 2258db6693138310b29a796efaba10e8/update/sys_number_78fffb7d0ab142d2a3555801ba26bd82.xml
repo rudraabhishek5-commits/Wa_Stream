@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_number">
+    <sys_number action="INSERT_OR_UPDATE">
+        <category display_value="" name="x_2015479_wa_str_0_noc_request">x_2015479_wa_str_0_noc_request</category>
+        <maximum_digits>7</maximum_digits>
+        <number>1000</number>
+        <prefix>NOC</prefix>
+        <sys_class_name>sys_number</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-16 13:47:11</sys_created_on>
+        <sys_id>78fffb7d0ab142d2a3555801ba26bd82</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>NOC</sys_name>
+        <sys_package display_value="Wa_Stream" source="x_2015479_wa_str_0">2258db6693138310b29a796efaba10e8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Wa_Stream">2258db6693138310b29a796efaba10e8</sys_scope>
+        <sys_update_name>sys_number_78fffb7d0ab142d2a3555801ba26bd82</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-16 13:47:11</sys_updated_on>
+    </sys_number>
+</record_update>

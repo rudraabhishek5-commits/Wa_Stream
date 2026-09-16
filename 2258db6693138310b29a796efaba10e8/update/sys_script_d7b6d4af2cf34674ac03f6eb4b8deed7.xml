@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>false</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_2015479_wa_str_0_song</collection>
+        <condition/>
+        <description>Auto-generates ISRC code (IN-XXX-YY-NNNNN) for new songs using the album label ISRC prefix, or validates format if provided.</description>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>ISRC Auto-Generator</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function () {
+    var isrc = current.getValue('isrc');
+
+    // If ISRC is provided, validate its format
+    if (isrc) {
+        var isrcPattern = /^[A-Z]{2}-[A-Z0-9]{3}-\d{2}-\d{5}$/;
+        if (!isrcPattern.test(isrc)) {
+            gs.addErrorMessage(
+                'Invalid ISRC format. Expected: XX-XXX-YY-NNNNN (e.g., IN-ABC-24-00001)'
+            );
+            current.setAbortAction(true);
+        }
+        return;
+    }
+
+    // --- Auto-generate ISRC ---
+
+    // Step 1: Look up the label's ISRC prefix via Song → Album → Label
+    var albumSysId = current.getValue('album');
+    if (!albumSysId) {
+        gs.addErrorMessage(
+            'Cannot auto-generate ISRC: Song must be associated with an album that has a label.'
+        );
+        current.setAbortAction(true);
+        return;
+    }
+
+    var albumGr = new GlideRecord('x_2015479_wa_str_0_album');
+    if (!albumGr.get(albumSysId)) {
+        gs.addErrorMessage('Cannot auto-generate ISRC: Album not found.');
+        current.setAbortAction(true);
+        return;
+    }
+
+    var labelSysId = albumGr.getValue('label');
+    if (!labelSysId) {
+        gs.addErrorMessage(
+            'Cannot auto-generate ISRC: Album does not have an assigned label.'
+        );
+        current.setAbortAction(true);
+        return;
+    }
+
+    var labelGr = new GlideRecord('x_2015479_wa_str_0_label');
+    if (!labelGr.get(labelSysId)) {
+        gs.addErrorMessage('Cannot auto-generate ISRC: Label not found.');
+        current.setAbortAction(true);
+        return;
+    }
+
+    var prefix = labelGr.getValue('isrc_prefix');
+    if (!prefix) {
+        gs.addErrorMessage(
+            'Cannot auto-generate ISRC: Label does not have an ISRC prefix configured.'
+        );
+        current.setAbortAction(true);
+        return;
+    }
+
+    // Step 2: Get current 2-digit year
+    var now = new GlideDateTime();
+    var dateStr = now.getValue();
+    var year = dateStr.substring(2, 4);
+
+    // Step 3: Query for the last assigned sequence number for this prefix + year
+    var isrcPrefix = 'IN-' + prefix + '-' + year + '-';
+    var songGr = new GlideRecord('x_2015479_wa_str_0_song');
+    songGr.addQuery('isrc', 'STARTSWITH', isrcPrefix);
+    songGr.orderByDesc('isrc');
+    songGr.setLimit(1);
+    songGr.query();
+
+    var sequence = 1;
+    if (songGr.next()) {
+        var lastIsrc = songGr.getValue('isrc');
+        var parts = lastIsrc.split('-');
+        var lastSeqStr = parts[parts.length - 1];
+        var lastSeq = parseInt(lastSeqStr, 10);
+        if (!isNaN(lastSeq)) {
+            sequence = lastSeq + 1;
+        }
+    }
+
+    // Step 4: Zero-pad the sequence to 5 digits and assemble the ISRC
+    var seqStr = sequence.toString();
+    while (seqStr.length < 5) {
+        seqStr = '0' + seqStr;
+    }
+    var generatedIsrc = isrcPrefix + seqStr;
+
+    current.setValue('isrc', generatedIsrc);
+    gs.addInfoMessage('Auto-generated ISRC: ' + generatedIsrc);
+})();
+]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-16 16:18:41</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d7b6d4af2cf34674ac03f6eb4b8deed7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ISRC Auto-Generator</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Wa_Stream" source="x_2015479_wa_str_0">2258db6693138310b29a796efaba10e8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Wa_Stream">2258db6693138310b29a796efaba10e8</sys_scope>
+        <sys_update_name>sys_script_d7b6d4af2cf34674ac03f6eb4b8deed7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-16 16:18:41</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=d7b6d4af2cf34674ac03f6eb4b8deed7"/>
+</record_update>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Audio and Classification" section_id="22cd90bc8e9242fdb586af6035164a79" sys_domain="global" table="x_2015479_wa_str_0_song" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-09-16 18:48:55</sys_created_on>
+            <sys_id>adbd609975e44ab8a9a632d0773d970c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Audio and Classification" display_value="Audio and Classification" name="x_2015479_wa_str_0_song" sys_domain="global" view="Default view">22cd90bc8e9242fdb586af6035164a79</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-09-16 18:48:55</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>duration_seconds</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-09-16 18:48:55</sys_created_on>
+            <sys_id>b17eacaef6014661a734bf49074d3ee3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Audio and Classification" display_value="Audio and Classification" name="x_2015479_wa_str_0_song" sys_domain="global" view="Default view">22cd90bc8e9242fdb586af6035164a79</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-09-16 18:48:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>release_date</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-09-16 18:48:55</sys_created_on>
+            <sys_id>4a34b1df53424fcabb9f501bf241579d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Audio and Classification" display_value="Audio and Classification" name="x_2015479_wa_str_0_song" sys_domain="global" view="Default view">22cd90bc8e9242fdb586af6035164a79</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-09-16 18:48:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>mood_tags</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-09-16 18:48:55</sys_created_on>
+            <sys_id>3f280f548c744bd981a9c8423124b6ee</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Audio and Classification" display_value="Audio and Classification" name="x_2015479_wa_str_0_song" sys_domain="global" view="Default view">22cd90bc8e9242fdb586af6035164a79</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-09-16 18:48:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-09-16 18:48:55</sys_created_on>
+            <sys_id>05fbe1519efd481fb7a8b014727e26d6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Audio and Classification" display_value="Audio and Classification" name="x_2015479_wa_str_0_song" sys_domain="global" view="Default view">22cd90bc8e9242fdb586af6035164a79</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-09-16 18:48:55</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>bpm</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-09-16 18:48:55</sys_created_on>
+            <sys_id>3147348b5ff0451bb7fa60f027b8ddd1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Audio and Classification" display_value="Audio and Classification" name="x_2015479_wa_str_0_song" sys_domain="global" view="Default view">22cd90bc8e9242fdb586af6035164a79</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-09-16 18:48:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>content_rating</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-09-16 18:48:55</sys_created_on>
+            <sys_id>63ab06a1c54a45c59537166fd4f3d92a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Audio and Classification" display_value="Audio and Classification" name="x_2015479_wa_str_0_song" sys_domain="global" view="Default view">22cd90bc8e9242fdb586af6035164a79</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-09-16 18:48:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>metadata_valid</element>
+            <position>7</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-09-16 18:48:55</sys_created_on>
+            <sys_id>750032e906334d87b1bc74585ad7230c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Audio and Classification" display_value="Audio and Classification" name="x_2015479_wa_str_0_song" sys_domain="global" view="Default view">22cd90bc8e9242fdb586af6035164a79</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-09-16 18:48:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>8</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-09-16 18:48:55</sys_created_on>
+            <sys_id>f75942111ad14d54a443c31dde4b38b7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Audio and Classification" display_value="Audio and Classification" name="x_2015479_wa_str_0_song" sys_domain="global" view="Default view">22cd90bc8e9242fdb586af6035164a79</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-09-16 18:48:55</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Audio and Classification</caption>
+            <header>false</header>
+            <name>x_2015479_wa_str_0_song</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-09-16 17:33:51</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>22cd90bc8e9242fdb586af6035164a79</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_2015479_wa_str_0_song</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Wa_Stream" source="x_2015479_wa_str_0">2258db6693138310b29a796efaba10e8</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Wa_Stream">2258db6693138310b29a796efaba10e8</sys_scope>
+            <sys_update_name>sys_ui_section_22cd90bc8e9242fdb586af6035164a79</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-09-16 17:33:51</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

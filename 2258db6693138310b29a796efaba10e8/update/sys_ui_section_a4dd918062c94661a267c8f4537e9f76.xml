@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Credits and Rights" section_id="a4dd918062c94661a267c8f4537e9f76" sys_domain="global" table="x_2015479_wa_str_0_song" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-09-16 18:48:58</sys_created_on>
+            <sys_id>1bb29dbb5d354355a1f049a1d057eccf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Credits and Rights" display_value="Credits and Rights" name="x_2015479_wa_str_0_song" sys_domain="global" view="Default view">a4dd918062c94661a267c8f4537e9f76</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-09-16 18:48:58</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>lyricist</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-09-16 18:48:58</sys_created_on>
+            <sys_id>d72b9c37ba4a4003ba5f125699ce9dfc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Credits and Rights" display_value="Credits and Rights" name="x_2015479_wa_str_0_song" sys_domain="global" view="Default view">a4dd918062c94661a267c8f4537e9f76</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-09-16 18:48:58</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>isrc</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-09-16 18:48:58</sys_created_on>
+            <sys_id>649976817e73401fa69a672d0e1a24a8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Credits and Rights" display_value="Credits and Rights" name="x_2015479_wa_str_0_song" sys_domain="global" view="Default view">a4dd918062c94661a267c8f4537e9f76</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-09-16 18:48:58</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>copyright_line</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-09-16 18:48:58</sys_created_on>
+            <sys_id>2678f24339ca48e7be61bea6a0268b9f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Credits and Rights" display_value="Credits and Rights" name="x_2015479_wa_str_0_song" sys_domain="global" view="Default view">a4dd918062c94661a267c8f4537e9f76</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-09-16 18:48:58</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-09-16 18:48:58</sys_created_on>
+            <sys_id>98800155701d48c6825c21578192398d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Credits and Rights" display_value="Credits and Rights" name="x_2015479_wa_str_0_song" sys_domain="global" view="Default view">a4dd918062c94661a267c8f4537e9f76</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-09-16 18:48:58</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>composer</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-09-16 18:48:58</sys_created_on>
+            <sys_id>712b3979e3d2465784c6e665feaf456c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Credits and Rights" display_value="Credits and Rights" name="x_2015479_wa_str_0_song" sys_domain="global" view="Default view">a4dd918062c94661a267c8f4537e9f76</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-09-16 18:48:58</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>publishing_line</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-09-16 18:48:58</sys_created_on>
+            <sys_id>9452ac1e67234ef8a031217385ac6e0b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Credits and Rights" display_value="Credits and Rights" name="x_2015479_wa_str_0_song" sys_domain="global" view="Default view">a4dd918062c94661a267c8f4537e9f76</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-09-16 18:48:58</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>7</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-09-16 18:48:58</sys_created_on>
+            <sys_id>a6e864fc402346fd8ddf341ec149c1a0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Credits and Rights" display_value="Credits and Rights" name="x_2015479_wa_str_0_song" sys_domain="global" view="Default view">a4dd918062c94661a267c8f4537e9f76</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-09-16 18:48:58</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Credits and Rights</caption>
+            <header>false</header>
+            <name>x_2015479_wa_str_0_song</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-09-16 17:33:53</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a4dd918062c94661a267c8f4537e9f76</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_2015479_wa_str_0_song</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Wa_Stream" source="x_2015479_wa_str_0">2258db6693138310b29a796efaba10e8</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Wa_Stream">2258db6693138310b29a796efaba10e8</sys_scope>
+            <sys_update_name>sys_ui_section_a4dd918062c94661a267c8f4537e9f76</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-09-16 17:33:53</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

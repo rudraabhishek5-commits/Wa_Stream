@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="535ea23380444885afc396dcc84d1a80" label="Distribution Record" name="x_2015479_wa_str_0_distrib" type="collection">
+        <element label="Platform" mandatory="true" name="platform" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="YouTube Music" sequence="3" value="youtube_music"/>
+                <element inactive_on_update="false" label="Gaana" sequence="5" value="gaana"/>
+                <element inactive_on_update="false" label="Amazon Music" sequence="7" value="amazon_music"/>
+                <element inactive_on_update="false" label="Apple Music" sequence="2" value="apple_music"/>
+                <element inactive_on_update="false" label="JioSaavn" sequence="4" value="jiosaavn"/>
+                <element inactive_on_update="false" label="Hungama" sequence="8" value="hungama"/>
+                <element inactive_on_update="false" label="Wynk" sequence="6" value="wynk"/>
+                <element inactive_on_update="false" label="Resso" sequence="9" value="resso"/>
+                <element inactive_on_update="false" label="Spotify" sequence="1" value="spotify"/>
+            </choice>
+        </element>
+        <element label="DSP Track ID" name="dsp_track_id" type="string"/>
+        <element label="Streaming URL" max_length="500" name="streaming_url" type="string"/>
+        <element label="Submitted On" name="submitted_on" type="glide_date_time"/>
+        <element default="pending" label="Distribution Status" name="dist_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Taken Down" sequence="6" value="taken_down"/>
+                <element inactive_on_update="false" label="Submitted" sequence="2" value="submitted"/>
+                <element inactive_on_update="false" label="Failed" sequence="5" value="failed"/>
+                <element inactive_on_update="false" label="Pending" sequence="1" value="pending"/>
+                <element inactive_on_update="false" label="Processing" sequence="3" value="processing"/>
+                <element inactive_on_update="false" label="Live" sequence="4" value="live"/>
+            </choice>
+        </element>
+        <element default="0" label="Retry Count" name="retry_count" type="integer"/>
+        <element label="Live On" name="live_on" type="glide_date_time"/>
+        <element display="true" label="Song" mandatory="true" name="song" reference="x_2015479_wa_str_0_song" type="reference"/>
+        <element label="Error Reason" max_length="1000" name="error_reason" type="string"/>
+        <index name="index">
+            <element name="song"/>
+        </index>
+    </element>
+</database>

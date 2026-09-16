@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role">
+    <sys_user_role action="INSERT_OR_UPDATE">
+        <assignable_by/>
+        <can_delegate>true</can_delegate>
+        <description>Full access</description>
+        <elevated_privilege>false</elevated_privilege>
+        <federated_id>C4rZh1BR4Jd1kd0W8coJo2jds30Swcxev54/g9V1lDM=</federated_id>
+        <grantable>true</grantable>
+        <includes_roles/>
+        <name>x_2015479_wa_str_0.admin</name>
+        <scoped_admin>true</scoped_admin>
+        <suffix>admin</suffix>
+        <sys_class_name>sys_user_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-16 12:46:25</sys_created_on>
+        <sys_id>ee581f6693138310b29a796efaba1013</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_2015479_wa_str_0.admin</sys_name>
+        <sys_package display_value="Wa_Stream" source="x_2015479_wa_str_0">2258db6693138310b29a796efaba10e8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Wa_Stream">2258db6693138310b29a796efaba10e8</sys_scope>
+        <sys_update_name>sys_user_role_ee581f6693138310b29a796efaba1013</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-16 12:46:25</sys_updated_on>
+    </sys_user_role>
+</record_update>

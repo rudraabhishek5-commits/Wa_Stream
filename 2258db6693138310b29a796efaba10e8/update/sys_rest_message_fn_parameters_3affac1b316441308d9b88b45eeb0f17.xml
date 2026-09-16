@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_parameters">
+    <sys_rest_message_fn_parameters action="INSERT_OR_UPDATE">
+        <name>genre</name>
+        <rest_message_function display_value="submitSong">1f2ae94b7a824f16b1b04d798cc147f9</rest_message_function>
+        <sys_class_name>sys_rest_message_fn_parameters</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-16 17:22:48</sys_created_on>
+        <sys_id>3affac1b316441308d9b88b45eeb0f17</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>genre</sys_name>
+        <sys_package display_value="Wa_Stream" source="x_2015479_wa_str_0">2258db6693138310b29a796efaba10e8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Wa_Stream">2258db6693138310b29a796efaba10e8</sys_scope>
+        <sys_update_name>sys_rest_message_fn_parameters_3affac1b316441308d9b88b45eeb0f17</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-16 17:22:48</sys_updated_on>
+        <type>string</type>
+        <value/>
+    </sys_rest_message_fn_parameters>
+</record_update>

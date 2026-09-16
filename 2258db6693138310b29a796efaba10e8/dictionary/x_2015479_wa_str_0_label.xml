@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="166bae947280431892d1d5026925cab0" label="Music Label" name="x_2015479_wa_str_0_label" type="collection">
+        <element label="DSP Label ID" max_length="4000" name="dsp_label_id" type="string"/>
+        <element label="ISRC Prefix" max_length="5" name="isrc_prefix" type="string"/>
+        <element label="Default Revenue Split %" name="default_label_split" type="decimal"/>
+        <element display="true" label="Label Name" mandatory="true" name="label_name" type="string"/>
+    </element>
+</database>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="8d3fad18291a4ac2a4bb5f8be6f63325" label="Song" name="x_2015479_wa_str_0_song" type="collection">
+        <element label="Genre" name="genre" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Folk" sequence="4" value="folk"/>
+                <element inactive_on_update="false" label="Hip-Hop" sequence="7" value="hiphop"/>
+                <element inactive_on_update="false" label="Other" sequence="9" value="other"/>
+                <element inactive_on_update="false" label="Classical" sequence="3" value="classical"/>
+                <element inactive_on_update="false" label="Devotional" sequence="5" value="devotional"/>
+                <element inactive_on_update="false" label="Fusion" sequence="6" value="fusion"/>
+                <element inactive_on_update="false" label="Regional" sequence="8" value="regional"/>
+                <element inactive_on_update="false" label="Bollywood" sequence="1" value="bollywood"/>
+                <element inactive_on_update="false" label="Indie Pop" sequence="2" value="indie_pop"/>
+            </choice>
+        </element>
+        <element label="Album / EP" name="album" reference="x_2015479_wa_str_0_album" type="reference"/>
+        <element label="Dialect / Regional Tag" name="dialect_tag" type="string"/>
+        <element label="BPM" name="bpm" type="integer"/>
+        <element default="clean" label="Content Rating" name="content_rating" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Explicit" sequence="2" value="explicit"/>
+                <element inactive_on_update="false" label="Clean" sequence="1" value="clean"/>
+            </choice>
+        </element>
+        <element label="Metadata Validated" name="metadata_valid" type="boolean"/>
+        <element label="Mood Tags" name="mood_tags" type="string"/>
+        <element label="Copyright Line" name="copyright_line" type="string"/>
+        <element label="Duration (seconds)" name="duration_seconds" type="integer"/>
+        <element label="Release Date" name="release_date" type="glide_date"/>
+        <element label="Language" name="language" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Hindi" sequence="1" value="hindi"/>
+                <element inactive_on_update="false" label="Punjabi" sequence="9" value="punjabi"/>
+                <element inactive_on_update="false" label="Marathi" sequence="8" value="marathi"/>
+                <element inactive_on_update="false" label="Malayalam" sequence="7" value="malayalam"/>
+                <element inactive_on_update="false" label="Kannada" sequence="6" value="kannada"/>
+                <element inactive_on_update="false" label="Tamil" sequence="2" value="tamil"/>
+                <element inactive_on_update="false" label="Instrumental" sequence="10" value="instrumental"/>
+                <element inactive_on_update="false" label="Bhojpuri" sequence="5" value="bhojpuri"/>
+                <element inactive_on_update="false" label="Telugu" sequence="3" value="telugu"/>
+                <element inactive_on_update="false" label="Other" sequence="11" value="other"/>
+                <element inactive_on_update="false" label="Bengali" sequence="4" value="bengali"/>
+            </choice>
+        </element>
+        <element label="Publishing Line" name="publishing_line" type="string"/>
+        <element label="Sub-Genre" name="sub_genre" type="string"/>
+        <element label="Primary Artist" mandatory="true" name="primary_artist" reference="x_2015479_wa_str_0_artist" type="reference"/>
+        <element display="true" label="Song Title" mandatory="true" max_length="200" name="song_title" type="string"/>
+        <element label="Lyricist" name="lyricist" reference="x_2015479_wa_str_0_artist" type="reference"/>
+        <element label="ISRC Code" max_length="12" name="isrc" type="string"/>
+        <element default="draft" label="Song Status" name="song_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Draft" sequence="1" value="draft"/>
+                <element inactive_on_update="false" label="Distributing" sequence="4" value="distributing"/>
+                <element inactive_on_update="false" label="Rejected" sequence="6" value="rejected"/>
+                <element inactive_on_update="false" label="Metadata Review" sequence="2" value="metadata_review"/>
+                <element inactive_on_update="false" label="Takedown" sequence="7" value="takedown"/>
+                <element inactive_on_update="false" label="Approved" sequence="3" value="approved"/>
+                <element inactive_on_update="false" label="Published" sequence="5" value="published"/>
+            </choice>
+        </element>
+        <element label="Music Composer" name="composer" reference="x_2015479_wa_str_0_artist" type="reference"/>
+        <index name="index">
+            <element name="album"/>
+        </index>
+        <index name="index2">
+            <element name="composer"/>
+        </index>
+        <index name="index3">
+            <element name="lyricist"/>
+        </index>
+        <index name="index4">
+            <element name="primary_artist"/>
+        </index>
+    </element>
+</database>

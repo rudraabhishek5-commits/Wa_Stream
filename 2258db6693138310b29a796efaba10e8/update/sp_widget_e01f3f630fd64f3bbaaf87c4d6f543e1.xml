@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller = function () {
+    var c = this;
+
+    c.refresh = function () {
+        c.server.update().then(function (response) {
+            c.data.royalties = response.data.royalties;
+        });
+    };
+
+    c.getStatusClass = function (status) {
+        var statusMap = {
+            'collected': 'label-success',
+            'pending': 'label-warning',
+            'processing': 'label-info',
+            'failed': 'label-danger',
+            'disputed': 'label-danger'
+        };
+        return statusMap[status] || 'label-default';
+    };
+
+    c.formatCurrency = function (amount) {
+        if (!amount) return '$0.00';
+        return '$' + parseFloat(amount).toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,');
+    };
+
+    c.formatNumber = function (num) {
+        if (!num) return '0';
+        return parseInt(num).toLocaleString();
+    };
+};
+]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.royalty-list-container {
+  padding: 20px 0;
+}
+
+.royalty-list-container .page-title {
+  margin-top: 0;
+  font-weight: 300;
+  color: #333;
+}
+
+.royalty-list-container .table {
+  margin-top: 15px;
+}
+
+.royalty-list-container .table th {
+  background-color: #f5f5f5;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  color: #555;
+}
+
+.royalty-list-container .table td {
+  vertical-align: middle;
+}
+
+.royalty-list-container .label {
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 3px;
+  font-weight: 500;
+}
+</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>x_2015479_wa_str_0_royalty_list</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+}]]></link>
+        <name>Music Studio Royalty List</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function () {
+    data.royalties = [];
+    var gr = new GlideRecord('x_2015479_wa_str_0_royalty_col');
+    gr.addActiveQuery();
+    gr.orderByDesc('sys_created_on');
+    gr.setLimit(100);
+    gr.query();
+    while (gr.next()) {
+        data.royalties.push({
+            sys_id: gr.getUniqueValue(),
+            song: gr.getDisplayValue('song'),
+            platform: gr.getValue('platform'),
+            platform_display: gr.getDisplayValue('platform'),
+            gross_amount: gr.getValue('gross_amount'),
+            stream_count: gr.getValue('stream_count'),
+            collection_status: gr.getValue('collection_status'),
+            collection_status_display: gr.getDisplayValue('collection_status')
+        });
+    }
+})();
+]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-16 17:22:43</sys_created_on>
+        <sys_id>e01f3f630fd64f3bbaaf87c4d6f543e1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Music Studio Royalty List</sys_name>
+        <sys_package display_value="Wa_Stream" source="x_2015479_wa_str_0">2258db6693138310b29a796efaba10e8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Wa_Stream">2258db6693138310b29a796efaba10e8</sys_scope>
+        <sys_update_name>sp_widget_e01f3f630fd64f3bbaaf87c4d6f543e1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-16 17:22:43</sys_updated_on>
+        <template><![CDATA[<div class="royalty-list-container">
+  <div class="row">
+    <div class="col-xs-8">
+      <h2 class="page-title">My Royalties</h2>
+    </div>
+    <div class="col-xs-4 text-right">
+      <button class="btn btn-default" ng-click="c.refresh()">
+        <span class="fa fa-refresh"></span> Refresh
+      </button>
+    </div>
+  </div>
+
+  <div class="table-responsive" ng-if="c.data.royalties.length > 0">
+    <table class="table table-striped table-hover">
+      <thead>
+        <tr>
+          <th>Song</th>
+          <th>Platform</th>
+          <th class="text-right">Gross Amount</th>
+          <th class="text-right">Stream Count</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="royalty in c.data.royalties track by royalty.sys_id">
+          <td>{{royalty.song}}</td>
+          <td>{{royalty.platform_display || royalty.platform}}</td>
+          <td class="text-right">{{c.formatCurrency(royalty.gross_amount)}}</td>
+          <td class="text-right">{{c.formatNumber(royalty.stream_count)}}</td>
+          <td>
+            <span class="label" ng-class="c.getStatusClass(royalty.collection_status)">
+              {{royalty.collection_status_display || royalty.collection_status}}
+            </span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="alert alert-info" ng-if="c.data.royalties.length === 0">
+    <span class="fa fa-info-circle"></span> No royalty records found.
+  </div>
+</div>
+]]></template>
+    </sp_widget>
+</record_update>

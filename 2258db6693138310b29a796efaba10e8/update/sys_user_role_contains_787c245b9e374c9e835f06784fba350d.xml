@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role_contains">
+    <sys_user_role_contains action="INSERT_OR_UPDATE">
+        <contains display_value="x_2015479_wa_str_0.label_manager" name="x_2015479_wa_str_0.label_manager">434a5dda59c54d59acc1826f58d0b5d6</contains>
+        <role display_value="x_2015479_wa_str_0.admin" name="x_2015479_wa_str_0.admin">ee581f6693138310b29a796efaba1013</role>
+        <sys_class_name>sys_user_role_contains</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-16 13:47:12</sys_created_on>
+        <sys_id>787c245b9e374c9e835f06784fba350d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_2015479_wa_str_0.label_manager.x_2015479_wa_str_0.admin</sys_name>
+        <sys_package display_value="Wa_Stream" source="x_2015479_wa_str_0">2258db6693138310b29a796efaba10e8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Wa_Stream">2258db6693138310b29a796efaba10e8</sys_scope>
+        <sys_update_name>sys_user_role_contains_787c245b9e374c9e835f06784fba350d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-16 13:47:12</sys_updated_on>
+    </sys_user_role_contains>
+</record_update>

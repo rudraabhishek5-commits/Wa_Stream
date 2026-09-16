@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="1d93bb3e250740ce9d3dbbc502c630d5" label="Artist" name="x_2015479_wa_str_0_artist" type="collection">
+        <element label="PPL Member ID" name="ppl_id" type="string"/>
+        <element label="Primary Language" name="primary_language" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Marathi" sequence="8" value="marathi"/>
+                <element inactive_on_update="false" label="Kannada" sequence="6" value="kannada"/>
+                <element inactive_on_update="false" label="Bhojpuri" sequence="5" value="bhojpuri"/>
+                <element inactive_on_update="false" label="Tamil" sequence="2" value="tamil"/>
+                <element inactive_on_update="false" label="Telugu" sequence="3" value="telugu"/>
+                <element inactive_on_update="false" label="Punjabi" sequence="9" value="punjabi"/>
+                <element inactive_on_update="false" label="Bengali" sequence="4" value="bengali"/>
+                <element inactive_on_update="false" label="Hindi" sequence="1" value="hindi"/>
+                <element inactive_on_update="false" label="Malayalam" sequence="7" value="malayalam"/>
+                <element inactive_on_update="false" label="Other" sequence="10" value="other"/>
+            </choice>
+        </element>
+        <element label="Bank Account" name="bank_account" reference="x_2015479_wa_str_0_bank_detail" type="reference"/>
+        <element label="Genre" name="genre" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Folk" sequence="4" value="folk"/>
+                <element inactive_on_update="false" label="Other" sequence="9" value="other"/>
+                <element inactive_on_update="false" label="Indie Pop" sequence="2" value="indie_pop"/>
+                <element inactive_on_update="false" label="Hip-Hop" sequence="7" value="hiphop"/>
+                <element inactive_on_update="false" label="Devotional" sequence="5" value="devotional"/>
+                <element inactive_on_update="false" label="Fusion" sequence="6" value="fusion"/>
+                <element inactive_on_update="false" label="Bollywood" sequence="1" value="bollywood"/>
+                <element inactive_on_update="false" label="Classical" sequence="3" value="classical"/>
+                <element inactive_on_update="false" label="Regional" sequence="8" value="regional"/>
+            </choice>
+        </element>
+        <element label="Bio" max_length="4000" name="bio" type="string"/>
+        <element display="true" label="Artist Name" mandatory="true" max_length="100" name="artist_name" type="string"/>
+        <element label="Stage Name" max_length="100" name="stage_name" type="string"/>
+        <element label="Phone" name="phone" type="string"/>
+        <element default="draft" label="Onboarding Status" name="onboarding_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="KYC Pending" sequence="2" value="kyc_pending"/>
+                <element inactive_on_update="false" label="Draft" sequence="1" value="draft"/>
+                <element inactive_on_update="false" label="NOC Required" sequence="3" value="noc_required"/>
+                <element inactive_on_update="false" label="Active" sequence="4" value="active"/>
+                <element inactive_on_update="false" label="Suspended" sequence="5" value="suspended"/>
+            </choice>
+        </element>
+        <element label="IPRS Member ID" name="iprs_id" type="string"/>
+        <element default="0" label="Active Releases" name="active_releases" read_only="true" read_only_option="instance_configured" type="integer"/>
+        <element label="Artist Type" name="artist_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Folk Collective" sequence="3" value="folk_collective"/>
+                <element inactive_on_update="false" label="Solo Artist" sequence="1" value="solo_artist"/>
+                <element inactive_on_update="false" label="Session Musician" sequence="4" value="session_musician"/>
+                <element inactive_on_update="false" label="Band/Group" sequence="2" value="band_group"/>
+            </choice>
+        </element>
+        <element label="State / Territory" name="state" type="string"/>
+        <element label="Email" name="email" type="email"/>
+        <index name="index">
+            <element name="bank_account"/>
+        </index>
+    </element>
+</database>

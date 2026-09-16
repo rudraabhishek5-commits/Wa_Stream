@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="platform" table="x_2015479_wa_str_0_distrib" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>platform</element>
+            <name>x_2015479_wa_str_0_distrib</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-09-16 13:46:31</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>platform</sys_name>
+            <sys_package display_value="Wa_Stream" source="x_2015479_wa_str_0">2258db6693138310b29a796efaba10e8</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Wa_Stream">2258db6693138310b29a796efaba10e8</sys_scope>
+            <sys_update_name>sys_choice_x_2015479_wa_str_0_distrib_platform</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-09-16 13:46:31</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>platform</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Spotify</label>
+            <language>en</language>
+            <name>x_2015479_wa_str_0_distrib</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-09-16 13:46:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-09-16 13:46:31</sys_updated_on>
+            <value>spotify</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>platform</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Apple Music</label>
+            <language>en</language>
+            <name>x_2015479_wa_str_0_distrib</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-09-16 13:46:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-09-16 13:46:31</sys_updated_on>
+            <value>apple_music</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>platform</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>YouTube Music</label>
+            <language>en</language>
+            <name>x_2015479_wa_str_0_distrib</name>
+            <sequence>3</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-09-16 13:46:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-09-16 13:46:31</sys_updated_on>
+            <value>youtube_music</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>platform</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>JioSaavn</label>
+            <language>en</language>
+            <name>x_2015479_wa_str_0_distrib</name>
+            <sequence>4</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-09-16 13:46:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-09-16 13:46:31</sys_updated_on>
+            <value>jiosaavn</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>platform</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Gaana</label>
+            <language>en</language>
+            <name>x_2015479_wa_str_0_distrib</name>
+            <sequence>5</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-09-16 13:46:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-09-16 13:46:31</sys_updated_on>
+            <value>gaana</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>platform</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Wynk</label>
+            <language>en</language>
+            <name>x_2015479_wa_str_0_distrib</name>
+            <sequence>6</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-09-16 13:46:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-09-16 13:46:31</sys_updated_on>
+            <value>wynk</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>platform</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Amazon Music</label>
+            <language>en</language>
+            <name>x_2015479_wa_str_0_distrib</name>
+            <sequence>7</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-09-16 13:46:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-09-16 13:46:31</sys_updated_on>
+            <value>amazon_music</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>platform</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Hungama</label>
+            <language>en</language>
+            <name>x_2015479_wa_str_0_distrib</name>
+            <sequence>8</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-09-16 13:46:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-09-16 13:46:31</sys_updated_on>
+            <value>hungama</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>platform</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Resso</label>
+            <language>en</language>
+            <name>x_2015479_wa_str_0_distrib</name>
+            <sequence>9</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-09-16 13:46:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-09-16 13:46:31</sys_updated_on>
+            <value>resso</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

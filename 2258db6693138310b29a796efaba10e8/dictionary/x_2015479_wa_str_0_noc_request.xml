@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="a0f44c96a1994801a5a7ea8a7227c5a6" extends="task" label="NOC Request" name="x_2015479_wa_str_0_noc_request" type="collection">
+        <element label="Rejection Reason" max_length="1000" name="rejection_reason" type="string"/>
+        <element label="Source Work Title" name="source_work_title" type="string"/>
+        <element default="requested" label="NOC Status" name="noc_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Requested" sequence="1" value="requested"/>
+                <element inactive_on_update="false" label="Escalated" sequence="5" value="escalated"/>
+                <element inactive_on_update="false" label="Approved" sequence="3" value="approved"/>
+                <element inactive_on_update="false" label="Under Review" sequence="2" value="under_review"/>
+                <element inactive_on_update="false" label="Rejected" sequence="4" value="rejected"/>
+            </choice>
+        </element>
+        <element label="Original Rights Holder" name="original_rights_holder" type="string"/>
+        <element label="Artist" mandatory="true" name="artist" reference="x_2015479_wa_str_0_artist" type="reference"/>
+        <element label="Reviewed By" name="reviewed_by" reference="sys_user" type="reference"/>
+        <element label="Review Date" name="review_date" type="glide_date"/>
+        <element label="Song" name="song" reference="x_2015479_wa_str_0_song" type="reference"/>
+        <element label="NOC Type" name="noc_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Public Domain" sequence="2" value="public_domain"/>
+                <element inactive_on_update="false" label="Third-Party Cover" sequence="3" value="third_party_cover"/>
+                <element inactive_on_update="false" label="Collaboration" sequence="4" value="collaboration"/>
+                <element inactive_on_update="false" label="Folk / Traditional" sequence="1" value="folk_traditional"/>
+            </choice>
+        </element>
+    </element>
+</database>

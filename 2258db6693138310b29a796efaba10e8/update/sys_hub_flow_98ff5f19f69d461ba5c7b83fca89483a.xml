@@ -1,0 +1,1282 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <allow_high_security_roles>false</allow_high_security_roles>
+        <annotation/>
+        <attributes>timeFromCreateToActivate=7802000</attributes>
+        <authored_on_release_version/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source>fluent</generation_source>
+        <internal_name>folk_artist_onboarding__noc_engine</internal_name>
+        <label_cache>[{"name":"Created_1.current.artist_name","label":"Trigger - Record Created➛x_2015479_wa_str_0_artist Record➛Artist Name","type":"string","base_type":"string","usedInstances":{"1e84f8e4-dc52-43e4-b1e6-487c8ed86236":["log_message"],"72c8e425-ceb0-454a-857d-1116ae475972":["values"]},"attributes":{}},{"name":"Created_1.current.bank_account","label":"Trigger - Record Created➛x_2015479_wa_str_0_artist Record➛Bank Account","type":"string","base_type":"string","usedInstances":{"6c25bc9d-4a16-4e15-b830-7764db98639d":["condition"],"09e4e337-9fe9-4e05-b4d6-6d9c2880f073":["conditions"]},"attributes":{}},{"name":"09e4e337-9fe9-4e05-b4d6-6d9c2880f073.Record.kyc_status","label":"09e4e337-9fe9-4e05-b4d6-6d9c2880f073➛Record➛kyc_status","type":"string","base_type":"string","usedInstances":{"4567a1e5-8e10-458f-b658-3815ad303df5":["condition"]},"attributes":{}},{"name":"Created_1.current","label":"Trigger - Record Created➛x_2015479_wa_str_0_artist Record","type":"reference","base_type":"reference","usedInstances":{"b55ea1b9-74fe-492b-8021-e5cde10dc92c":["record"],"72c8e425-ceb0-454a-857d-1116ae475972":["values"],"7c921b81-f403-45af-9a83-4e205eef273a":["record"],"5ce41f6b-0c58-4819-89a6-01422e065e2a":["record"]},"attributes":{}}]</label_cache>
+        <master_snapshot>9aadccb693d78310b29a796efaba106b</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Folk Artist Onboarding &amp; NOC Engine</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>8d6bec7e93db8310b29a796efaba10ce</remote_trigger_id>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-16 16:39:09</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>98ff5f19f69d461ba5c7b83fca89483a</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name>Folk Artist Onboarding &amp; NOC Engine</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Wa_Stream" source="x_2015479_wa_str_0">2258db6693138310b29a796efaba10e8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Wa_Stream">2258db6693138310b29a796efaba10e8</sys_scope>
+        <sys_update_name>sys_hub_flow_98ff5f19f69d461ba5c7b83fca89483a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-16 18:49:14</sys_updated_on>
+        <type>flow</type>
+        <updation_source/>
+        <version>2</version>
+        <version_record/>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=98ff5f19f69d461ba5c7b83fca89483a"/>
+    <sys_variable_value action="delete_multiple" query="document_key=98ff5f19f69d461ba5c7b83fca89483a"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_2015479_wa_str_0_artist">onboarding_status=draft<item endquery="false" field="onboarding_status" goto="false" newquery="false" operator="=" or="false" value="draft"/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>false</on_update>
+        <published_version/>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-16 18:49:14</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8d6bec7e93db8310b29a796efaba10ce</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Wa_Stream">2258db6693138310b29a796efaba10e8</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-16 18:49:14</sys_updated_on>
+        <table>x_2015479_wa_str_0_artist</table>
+        <trigger_definition/>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>98ff5f19f69d461ba5c7b83fca89483a</identifier>
+        <identifier_type>flow</identifier_type>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-16 18:49:14</sys_created_on>
+        <sys_id>c16bec7e93db8310b29a796efaba10d0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-16 18:49:14</sys_updated_on>
+        <trigger display_value="">8d6bec7e93db8310b29a796efaba10ce</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=98ff5f19f69d461ba5c7b83fca89483a^sys_idNOT INc16bec7e93db8310b29a796efaba10d0"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=98ff5f19f69d461ba5c7b83fca89483a"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=98ff5f19f69d461ba5c7b83fca89483a"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=98ff5f19f69d461ba5c7b83fca89483a^sys_idNOT IN75ad8cb693d78310b29a796efaba1089,7dad8cb693d78310b29a796efaba105c"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Folk Artist Onboarding &amp; NOC Engine">98ff5f19f69d461ba5c7b83fca89483a</model>
+        <model_id>98ff5f19f69d461ba5c7b83fca89483a</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_98ff5f19f69d461ba5c7b83fca89483a</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-16 16:39:18</sys_created_on>
+        <sys_id>75ad8cb693d78310b29a796efaba1089</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Wa_Stream">2258db6693138310b29a796efaba10e8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-16 16:39:18</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=75ad8cb693d78310b29a796efaba1089"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,timeFromCreateToActivate=10000,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Folk Artist Onboarding &amp; NOC Engine">98ff5f19f69d461ba5c7b83fca89483a</model>
+        <model_id>98ff5f19f69d461ba5c7b83fca89483a</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_98ff5f19f69d461ba5c7b83fca89483a</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-16 16:39:18</sys_created_on>
+        <sys_id>7dad8cb693d78310b29a796efaba105c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Wa_Stream">2258db6693138310b29a796efaba10e8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-16 17:14:01</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=7dad8cb693d78310b29a796efaba105c"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=98ff5f19f69d461ba5c7b83fca89483a"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=98ff5f19f69d461ba5c7b83fca89483a"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=98ff5f19f69d461ba5c7b83fca89483a^sys_idNOT IN37277a807ed843d7ad0695bb54a426af"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Folk Artist Onboarding &amp; NOC Engine">98ff5f19f69d461ba5c7b83fca89483a</flow>
+        <generation_source/>
+        <name>Created</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-16 16:39:09</sys_created_on>
+        <sys_id>37277a807ed843d7ad0695bb54a426af</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="Wa_Stream">2258db6693138310b29a796efaba10e8</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-16 18:49:11</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/+1Y224TMRD9FWufQApSykWIvgGlUqRCJVrgoVQrZz2bWDh2sGeTLFX+nfFeEnezadM2Cwj1KfHY8ZyZOcce5+IqQitHI7AD7ZDrBM5yNxDRYRT1IsWHoOjrOR8qoLHUCFZzdZ5PgczozbHmEz8nYApagMbyp8nYyAROpKPxxWUvmnAtOBqbR4doM+hFqTWTc5hMFUfaK+XKkdFYATY6POj3e1Gxb+WENpxxlfnxIn7eP3j18vWbeM5jhzbux9yi90MYpKP98q87LE3GUgkLukQ35Za8ofd9tRF1Awi2BF/hJtSwQJ8GsQopCLyyWODiVKs8WLJw8hcUv88cxEEqqxXp2djMP0MKhDiBY6kLd9WkMglXqxFHqucwQ3AUy3K5SsqxBFWV1SVWTvFtgnJWp37Z24UHnzPNTjX7UMXIigy5TWKUxb+FFFcUFfzMfEBF5GldNs8PWpyeBF6NZklmKXpklE9WZ5lhjSAdTPgISje0r4IEgyKkX1w4+iidk3oUxL4FSjG/iUXlIaCaGA+BcNlGlF0lYjMdGx2vqLcWS42/IYzavIMItpZ8q29scOBf1UbExczzXNSU60As38ag2RlQqY3/RPQl37NchgbHTYqmxrJ3ZGcD74kX4AvhfDL6WWirsHWnIE3kkGuHIVBfZ1aj3QKsM1y7YKKtLds/qAdrfU6sit2KTbPrRGhovbLuKPUthN3u/FHtgeqUmRNf9i1wrvMNfXtPUpOkc5YYcrbAzpQy5MmPkTWZFttQrFewJwJSnil82t2VbCzcDOf6ir8pVI+ITr9Qo2Eym0oN53bU65pyrW4f1Vmm6r3RQmJ5dDe1WU+5Oz1i7siGJABQc8HooeFWEOHoccIxc9+zfv+FEJanLY+ZW1bvwJcwCS2wsCUfnfGlegPely5zrtHFaGIuRBwgXj0eJkaAOgqqWXGEZDHN0EXLoNbUv66edx21gEUn0VH/13Y9UPPirwZKuu3sIDYaYpO2Nk8yZVVy6MUwzBmOgTApOpZo5wJVlw2nL2gT2pFhNMHsHwG3nwbPI2np8spyNw6H0niXHq/ByFucP94jbek7Kf9Kaqh5pKSAWFX/SO39Qil4EEBrrVzlvebMJmHuw5Yq3JscYksK/kOuXP4GM5If2TYVAAA=</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=98ff5f19f69d461ba5c7b83fca89483a^sys_idNOT IN09e4e3379fe94e05b4d66d9c2880f073,1e84f8e4dc5243e4b1e6487c8ed86236,5ce41f6b0c58481989a601422e065e2a,72c8e425ceb0454a857d1116ae475972,7c921b81f40345af9a834e205eef273a,9c9c29729afa41ba8e72f190afbb5396,ae9943a6e567475eaae723990e78cbc8,b55ea1b974fe492b8021e5cde10dc92c"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="">9d09f99587003300663ca1bb36cb0ba3</action_type_parent>
+        <attributes>timeFromCreateToActivate=10000</attributes>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Folk Artist Onboarding &amp; NOC Engine">98ff5f19f69d461ba5c7b83fca89483a</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>6c25bc9d-4a16-4e15-b830-7764db98639d</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-16 16:39:09</sys_created_on>
+        <sys_id>09e4e3379fe94e05b4d66d9c2880f073</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="Wa_Stream">2258db6693138310b29a796efaba10e8</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-16 18:49:11</sys_updated_on>
+        <ui_id>09e4e337-9fe9-4e05-b4d6-6d9c2880f073</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VYbW/aOhT+K1E+U27CW6DfrqiQJu2u0trbL9tkObZTrBk7s51Sivrf73HiBAQZlFuQNu0T8vGxz9vznBPzZR1KvGDhdWiUtsiuchZ2wicsikaGDQER5SYXePXgd3BgVfAC8hxrOG+ZDq/XIZlzQTWT4fWXb52QU1Ac0miSTSbDcRJF/X4UjUZ9guM07Y9IGqVpDFcInDIBqndgLbivPGhxqvy5BhuKk3r90R+d1kKlqXOl3wnZs2WSMvAhw8KwTrjAkmKr9KqRaIbprRQbwZxLC7eFTvnZ8Bew1+85vYxBVIRVe80S+aRU4uwGW3xndUFsob1q5ayBfKybMJvUtWTZux+9djb6L04f7+pTtn0gfoV8U5bhQtjp/7MZn2qz52xWAd7mliuoeth3dcGpqMNXoljIT1Utw8bDhxZ4VTs3P0FZYSDZLHcFdRXy5cru5mr5ua7GjMvSL78pFMGiWWFrNU8L6/KyDjOKMs4ERVwKLp0lKJuDDxNsARbQAuc5l48o1+qJl7dCLIvuo4BFNxNq6XLBH2UXExd5F4CFuzOQ35TiB6y5y8I/cA0c7jiDczjq7SFDNM8tWnL6yOzGeq1FlV1i8b1t3yMO1YUqwwtfO6FZmanAxmySDTBFPwqXgyr1PnuoLFR5pPTib4jgiflEOQx46hElKXfBmW0YrAzi9GsBXKbr9RQIZBlFcZcUGmpguymW3xEmRBXSvr7ut42Tzx9rL3R4qL3gyVZ7mW4H1BZk3WB2ZR/bLqhZc7ZGM4ii6Dytpq0V7FP1JKbuU9BB8h0MvAzRTudBlYKjZEDISAK8hGMZ5gLOIqa10lvUiPbRXpHzOIgJw+mgh0dJP46jKI5oEo2TJB6P0myEk0G2BeIbJR17eokNnCOBkkHtyHFXPcBTpQTDcgfd91DQv2beY4/u4RnR/Rth+73jpeD3u5muRK25vtTMKfi/kv8o2AcHsTGLeuOYkqtxEidXg4yOriYUD6/wJB0mfcrIILvMGKnqsKHJM+pF8XCQTNASI2M1ilDZ9CmzgNZ9Dh3VPzohJgcnxGCLXPfe1x3XPW3KJSr3dpjjNoJP1Ub9BXc25oz/JOZc7PuLC0AIqkpoVKHLVD4hIgpTbmgsTXXXRVjAM7SAxPEczGtGACQGYc1QBh86FHnDG5K4rGZcG+uV92nxmUGNJbR/sQrsnAWldtBoHyNFfJAU6fZn04csqF3395sAXA9K14PG9dMCPeUtN/jlhtDmnTRzM9jlH1CUbxWwnrht77kjpTuAgTc+9t7oVHxWp97/GmwDfeur8Iivv0VLukSTKZ/TVZL3G8ZbmsLBv2ow3WoKt67oQbra+aemMe75XT2yW0bmzG3sjMzenzkyf8mHVOdnf5Gc+YX17T9aBya2gBQAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=09e4e3379fe94e05b4d66d9c2880f073"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
+        <action_type_parent display_value="">5bc1bcc6531003003bf1d9109ec587d4</action_type_parent>
+        <attributes>timeFromCreateToActivate=10000</attributes>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Folk Artist Onboarding &amp; NOC Engine">98ff5f19f69d461ba5c7b83fca89483a</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-16 16:39:09</sys_created_on>
+        <sys_id>1e84f8e4dc5243e4b1e6487c8ed86236</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="Wa_Stream">2258db6693138310b29a796efaba10e8</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-16 18:49:11</sys_updated_on>
+        <ui_id>1e84f8e4-dc52-43e4-b1e6-487c8ed86236</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VUUWvbMBD+K0bPjomTel3zNpIVBm0KC3QPpRhZPicCWfIkOWlm8t93shXHtGFbIG+DPESfP93dd/ruXhoiaQlkRoRapwK2IEhItlTUDuOyUHjMuakE3T979FuHVlTjTQuazBrCNlzkGiSZvbyGhOdISzIWZ4x9SqbxeDzFX1bE+V08vgOWfL7NbzGEoBnmm5EHn/dMKXZfOYhtFGfgzw/+2vwIKp27MsYhgTcLMgfMX1BhICQllTm1Su97RAPNn6Q4ARsuLUYjjvxm+C/MdzN2vAJQEYPuW39MfTs6uFhQS1dW18zW2lO7Yg32oukljkbBUkkIRqNBfwelH8IT1zf43St4Zjxk/qBacrkekHeInMiTIfmr1koPqODPnjs94MvlUNBa2PnlCuJ/VjC5RMH0AgU3TkHX/KfKcoVuJLHzDM3E8WmUqEu57HxGer3P7wzfoYuzvq8NWgAqZzPnG2+iYrVRu+9Hj9xz2VbkPwrFqOhP1FrNs9q6/jYEBJQYKC1pVWEj0kqrLW8vY7FltBZ4iAqhdpjU8LWMKHPSInQ1je4RX7TwM9XcyXzEMHj5EBKzN3NBjTmJRQunP2tXSSfda0jbRrVXmOaV/YIJtuDLde0fjGUJxtA1DN5gCbuAasuNDZTMFNU5qgiMRQzyWdA0cxw4/JvGEas1dsdGHT11YQ+Hj/vlChH/tpsm0z/tJkgGu+mxV3y2DX4/GXzS1sXD/bQ6gscRudp+miTJdRbUuZH/OEQXzdD/NyKvvwE6DoZMRgcAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=1e84f8e4dc5243e4b1e6487c8ed86236"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="">f9d01dd2c31332002841b63b12d3aea1</action_type_parent>
+        <attributes>timeFromCreateToActivate=10000</attributes>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Folk Artist Onboarding &amp; NOC Engine">98ff5f19f69d461ba5c7b83fca89483a</flow>
+        <generation_source/>
+        <order>11</order>
+        <parent_ui_id>b3022592-ecd9-417f-aba9-f04046829257</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-16 16:39:09</sys_created_on>
+        <sys_id>5ce41f6b0c58481989a601422e065e2a</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="Wa_Stream">2258db6693138310b29a796efaba10e8</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-16 18:49:11</sys_updated_on>
+        <ui_id>5ce41f6b-0c58-4819-89a6-01422e065e2a</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+2Uy27bMBBFf8Xg2hAkvxp7V9g1UKBN0KTIJk2JETm2iVKPkpQfNfzvHUqyLDhB4kUWDVDtOJwZ3js84sOepZAgmzAHsUZeLrpsDbrwwS3vhdFw8GHMN8CtMzzkYJyyjnKksrmG3f0FqTkY6uvQsMmeiZXS0mDKJg+PXaYk1cZDGUbjaCT6Ub/fC8Pe1SCKR/046sk+oBhTCw0xakr97mXS+jnVbpc/G/vSru1cVxuZkV7PMOwy3DpMJZKSBWiLXZZAKsFlZscmzhQUMAjyJtW7JmOlUkcdmc/dWvWHzr0Kfd4CyZrAaq9Z8npYVXgxAwd31Fm4wtSpYpUpgbYaisQFFNpN27Eq4SZ3KkurktJnXZ3pIkmvq5mwpsHxbihSWBKBuffpldc2FnerbHN7VDlXaTmTelNnAnSzAueMigvn9ewZakyoEU8gz1W65LnJ1qosJi1JsNS0CBY629ChVi3TAIQXHtBYIZhTfFaG78Eo7+IrtaHiQ5fZnZ1qsPbkhYbIfxdeSeWs9sCrMfgSYVTuPtIBa6zlHroN1wYFXXWL6f1+StfpUPIoEIUh5+5weMrzBdgO8CVsMWphe3tUca6qZlZmoigHquQZtLN6p/N5dqI2ejNqB++J2srWu4e29UC9im9JrW3hm6VxBkZ6/daBK+yPIgz78tdOcH8IxX9++vYU50vLXmM+7L3IPLaYnyvU0p6Yb6wc32lMSKFDXlk7e6vrzc59vdmQ/2boR6Ow/P7/AP/eD/D4FxHvutOZCAAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=5ce41f6b0c58481989a601422e065e2a"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="">2de05916c31332002841b63b12d3aee1</action_type_parent>
+        <attributes>timeFromCreateToActivate=10000</attributes>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Folk Artist Onboarding &amp; NOC Engine">98ff5f19f69d461ba5c7b83fca89483a</flow>
+        <generation_source/>
+        <order>6</order>
+        <parent_ui_id>4567a1e5-8e10-458f-b658-3815ad303df5</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-16 16:39:09</sys_created_on>
+        <sys_id>72c8e425ceb0454a857d1116ae475972</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="Wa_Stream">2258db6693138310b29a796efaba10e8</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-16 18:49:11</sys_updated_on>
+        <ui_id>72c8e425-ceb0-454a-857d-1116ae475972</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/9VUTW/aQBD9K9GekWUDoQm3iJRTm6hNxSVNVoN3DCut187umI8i/ntnvYagNqg99ND4Nt/vzc7z405YKFGMBcHcoGyNnliBaYJzI/tpdjn8cC3XID05mUpb5dLhS4OeOFFpXxvYzv42vwbHEwidGO9EvtRGObRi/PjUE1pxg1GG6eV1NsoH2WDQT9P+1TCbjwbzrK8GgDjkFgbmaDj1WwDM9lv4aVu/6ft0WntxFwOVUwFP2hO4IbQKGUgBxmNPlGAVUOW2YkyuYYdDUPfWbI8ZS22JG4qQu/H6B4+9SkNegcwsxxg7mrJbWHQXt0DwwJ1zalyXmi8rnaOPO1FYQGNocuqLCfc16crGkpZmV12ZprR3cSXi2ODwPuxpPIPAOvAMyDsaxcOyWn89oJxq266kC5oqB3O0gMjpeUMBz06gwZIbyRLqWtuFrF210m0xYymThWEjKUy15qFeL2wCeQCe8FohmbL/tnXPwOnA4jO34eJ9T/itnxjw/pULL1G+NAFJZNZxkHENoSR3uqYbHrDCDu6+dzzw9qb9yXGDI+3pe5OmA7XbTfhpCZXMkrxxvAXa75/D7YaziTmV0wttwbRuT0CNjwHloKBnv6wcBZYtCuZ4tnMSJ7eHyVM+fvldSP8Vtj+KVmF6fVa02fxEtFONRvlX1R4f5aBYLHkNhDI+0i+q7YIXsy7YKTf7V8rNRmn7vSP9RnLvXr4nf+ozQn76CSBdY+mrBgAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=72c8e425ceb0454a857d1116ae475972"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="">f9d01dd2c31332002841b63b12d3aea1</action_type_parent>
+        <attributes>timeFromCreateToActivate=10000</attributes>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Folk Artist Onboarding &amp; NOC Engine">98ff5f19f69d461ba5c7b83fca89483a</flow>
+        <generation_source/>
+        <order>8</order>
+        <parent_ui_id>09f6c688-44c4-4569-8656-09c4253f3101</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-16 16:39:09</sys_created_on>
+        <sys_id>7c921b81f40345af9a834e205eef273a</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="Wa_Stream">2258db6693138310b29a796efaba10e8</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-16 18:49:11</sys_updated_on>
+        <ui_id>7c921b81-f403-45af-9a83-4e205eef273a</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+2Uy27bMBBFf8Xg2hAkvxp7V9g1UKBN0KTIJk2JETm2iVKPkpQfNfzvHUqyLDhB4kUWDVDtOJwZ3js84sOepZAgmzAHsUZeLrpsDbrwwS3vhdFw8GHMN8CtMzzkYJyyjnKksrmG3f0FqTkY6uvQsMmeiZXS0mDKJg+PXaYk1cZDGUbjaCT6Ub/fC8Pe1SCKR/046sk+oBhTCw0xakr97mXS+jnVbpc/G/vSru1cVxuZkV7PMOwy3DpMJZKSBWiLXZZAKsFlZscmzhQUMAjyJtW7JmOlUkcdmc/dWvWHzr0Kfd4CyZrAaq9Z8npYVXgxAwd31Fm4wtSpYpUpgbYaisQFFNpN27Eq4SZ3KkurktJnXZ3pIkmvq5mwpsHxbihSWBKBuffpldc2FnerbHN7VDlXaTmTelNnAnSzAueMigvn9ewZakyoEU8gz1W65LnJ1qosJi1JsNS0CBY629ChVi3TAIQXHtBYIZhTfFaG78Eo7+IrtaHiQ5fZnZ1qsPbkhYbIfxdeSeWs9sCrMfgSYVTuPtIBa6zlHroN1wYFXXWL6f1+StfpUPIoEIUh5+5weMrzBdgO8CVsMWphe3tUca6qZlZmoigHquQZtLN6p/N5dqI2ejNqB++J2srWu4e29UC9im9JrW3hm6VxBkZ6/daBK+yPIgz78tdOcH8IxX9++vYU50vLXmM+7L3IPLaYnyvU0p6Yb6wc32lMSKFDXlk7e6vrzc59vdmQ/2boR6Ow/P7/AP/eD/D4FxHvutOZCAAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=7c921b81f40345af9a834e205eef273a"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
+        <action_type_parent display_value="">5bc1bcc6531003003bf1d9109ec587d4</action_type_parent>
+        <attributes>timeFromCreateToActivate=10000</attributes>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Folk Artist Onboarding &amp; NOC Engine">98ff5f19f69d461ba5c7b83fca89483a</flow>
+        <generation_source/>
+        <order>12</order>
+        <parent_ui_id>b3022592-ecd9-417f-aba9-f04046829257</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-16 16:39:09</sys_created_on>
+        <sys_id>9c9c29729afa41ba8e72f190afbb5396</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="Wa_Stream">2258db6693138310b29a796efaba10e8</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-16 18:49:11</sys_updated_on>
+        <ui_id>9c9c2972-9afa-41ba-8e72-f190afbb5396</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VUXY/aMBD8K5GfAyJw6fV4a6EnVb0PqUhU1ekUOfYGrDp2ajtwFPHfb01MiChqi3RvlfKyk7F3Z3e8T1uiaAlkTKReZBJWIElMVlTWHhOq0BhyYStJN/OAfm7Qiho86cCQ8ZawpZDcgCLjp+eYCI60NGdJzti7dJQMBiP88iLhN8ngBlj6/ppf4xWS5phvTO5C3jOluE3lIbbUgkGI78KxyQHUhvsyBjGBFweKA+YvqLQQk5IqTp02mxYxQPmjkkdgKZTD24gnv1jxC/NdDTyvAFTEoPnXhlloRwMXU+rozJmaudoEalOsxV5sW4m9XvSgFUS9Xqe/ndJ38ZEbGnwyhcBMusxv1CihFh3yGpEjedglfzJGmw4VQhy4ox1OjkNBa+kmlytI/lnB8BIFowsUXHkFTfMfKyc0upEk3jM0l4fRaFmX6qHxGWn1zk8M36DTs76vLVoAKm8z75tgomK21OuvB4/cCrWvKPyUmlHZRtQ5I/La+f5uCUgo8aKspFWFjcgqo1difxiLLfsLiUG/kHqNSa1YqD5lXlofXU37t4hP9/CcGuFl3uM1eHgXE7uxE0mtPYpFC2c/a19JIz1oyPaN2h9hRlTuAyZYQSjXt7/zLEuwli6gM4OPVP2IODgqpI2UdlEQwOPIgnMoKfryfRL5XM2cT7bJxef/tneGoz/tHUg7e+e+VXNWYtg9Fse1z9zdPbMDeLD/m+2eYZq+zfI595x/fyAXvY//z/7Pr6l7jXkiBwAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=9c9c29729afa41ba8e72f190afbb5396"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
+        <action_type_parent display_value="">5bc1bcc6531003003bf1d9109ec587d4</action_type_parent>
+        <attributes>timeFromCreateToActivate=10000</attributes>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Folk Artist Onboarding &amp; NOC Engine">98ff5f19f69d461ba5c7b83fca89483a</flow>
+        <generation_source/>
+        <order>9</order>
+        <parent_ui_id>09f6c688-44c4-4569-8656-09c4253f3101</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-16 16:39:09</sys_created_on>
+        <sys_id>ae9943a6e567475eaae723990e78cbc8</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="Wa_Stream">2258db6693138310b29a796efaba10e8</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-16 18:49:11</sys_updated_on>
+        <ui_id>ae9943a6-e567-475e-aae7-23990e78cbc8</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VUXW/aMBT9K8jPgAg068rbBKs0rR/SkDpVVRXdODdgybEz24EyxH/fdWJC1LIPpL5N4uWeHPuec324TzumoEA2ZVIvE4lrlKzP1iArjwmVayozYUsJ24eAfmnQEgyddGjYdMf4SsjMoGLTp+c+ExnR4pRHKecf4kk0Gk3ol+ZRdhWNrpDHHy+zS7pCQkr9puwm9D0hxW1LD/GVFhxDfROOzQ6gNpmXMeozfHGoMqT+OUiLfVaAysBps20Rg5DdK3kEVkI5uo158osVP6nfxcjzciRHHJtvbZmEcTRwPgcHC2cq7ioTqI1YS7PYtRYHg96dVtgbDDrz7Ujf94/cMOBXrxCYUZf5HYwSatkhbwg5ksdd8mdjtOlQMdSBO9nTy2WYQyXd7HwH0T87GJ/jYHKGgwvvoBn+femEpjSyyGcGUnl4Gi2rQt01OWOt34dXgW/Q+cncV5YigKWPmc9NCFG+WOnNt0NGroWqFYWPUnOQbQXOGZFWzs93x1BiQRclBZQlDSIpjV6L+jCJLYZLScUwl3pDTa1YqiFwb21IqYbhNeHzGn4AI7zNW7qGDu/7zG7tTIK1R7MU4eRH5ZU01oOHpB5UfYQbUbpP1GCNQa4ff+dvWaC1sMTOG3x9nPX8RaS9l2vTA+OEdW+3xm95f9sj48mf9gjGnT1y26o7KTnsEkvjrxPX3SWLA3iI87vtknEcv88yOfX3fBv4s/L+/8X5+RcwZIKX8gYAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=ae9943a6e567475eaae723990e78cbc8"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="">f9d01dd2c31332002841b63b12d3aea1</action_type_parent>
+        <attributes>timeFromCreateToActivate=10000</attributes>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Folk Artist Onboarding &amp; NOC Engine">98ff5f19f69d461ba5c7b83fca89483a</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id>4567a1e5-8e10-458f-b658-3815ad303df5</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-16 16:39:09</sys_created_on>
+        <sys_id>b55ea1b974fe492b8021e5cde10dc92c</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="Wa_Stream">2258db6693138310b29a796efaba10e8</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-16 18:49:11</sys_updated_on>
+        <ui_id>b55ea1b9-74fe-492b-8021-e5cde10dc92c</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+2UTU8bMRCG/wryOYp280Eht4oUqVILKlRcKLVm7UliyWsv/gDSKP+9493NsgIEOXAoUvfm8cz4fcfP+nrDDJTIZixAoZHXiwG7Ax1T8IGPsnw6+XTM74H74HjGwQXlA+VI5SsN66s9Uitw1DegY7MNEyulpUPDZtc3A6Yk1RZTmeXH+aEY5+PxKMtGR5O8OBwX+UiOAcUxtdBQoKbUn0kmrV9SHdbVi7Fv/dqDs2bDOpn0TLMBw4eARiIpWYD2OGAlGAnBujWbBRcp4BDkudHrLmOlTKCOLOU+ePWHzj3KUt4CyZrAZq9b8nZYTXgxhwCX1FmE6NpUsbJKoG+GInEBUYeTfqxJOK+CsqYpqX221VbH0pw1M2Fdg93dUCR6EoFV8pmUtzYWlyt7f7FTeapMPZN2U1sBultBCE4VMSQ9G4YaS2rES6gqZZa8cvZO1cWkpRwuNS2GC23v6VCvlmYIIgkf0lhheErxeR2+AqeSi+/Uhoq3A+bX/kSD949eaIj8NiYljbPWA2/GkEqEU1X4TAfcYSt3O+i4dijoqntMbzYndJ0BJc+HIjpyHrbb5zzvge0EX8MW8x62FzsVT1W1zEorYj1QJZ9AO293Dr7OH6nN343ayUeitrH14aHtPVBv4ltT63v4WlNYcDLp9wFC9L9ilo2lsYI7vI3Kofz95cdznveue4v6bPQq9dij/lShlv6R+s7M7qXGkiQG5I25J691u3lw1W527L8b/PlhVn//f4F/7xe4+QtpiKQZmwgAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=b55ea1b974fe492b8021e5cde10dc92c"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=98ff5f19f69d461ba5c7b83fca89483a"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=98ff5f19f69d461ba5c7b83fca89483a^sys_idNOT IN09f6c68844c44569865609c4253f3101,4567a1e58e10458fb6583815ad303df5,6c25bc9d4a164e15b8307764db98639d,b3022592ecd9417faba9f04046829257"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes>timeFromCreateToActivate=10000</attributes>
+        <block display_value="">42ad8cb693d78310b29a796efaba10f3</block>
+        <comment>KYC status is not verified</comment>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Folk Artist Onboarding &amp; NOC Engine">98ff5f19f69d461ba5c7b83fca89483a</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <parent_ui_id>6c25bc9d-4a16-4e15-b830-7764db98639d</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-16 16:39:09</sys_created_on>
+        <sys_id>09f6c68844c44569865609c4253f3101</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Wa_Stream">2258db6693138310b29a796efaba10e8</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-16 18:49:11</sys_updated_on>
+        <ui_id>09f6c688-44c4-4569-8656-09c4253f3101</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes>timeFromCreateToActivate=10000</attributes>
+        <block display_value="">cead8cb693d78310b29a796efaba10ed</block>
+        <comment>Check if KYC status is verified on bank detail</comment>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Folk Artist Onboarding &amp; NOC Engine">98ff5f19f69d461ba5c7b83fca89483a</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <parent_ui_id>6c25bc9d-4a16-4e15-b830-7764db98639d</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-16 16:39:09</sys_created_on>
+        <sys_id>4567a1e58e10458fb6583815ad303df5</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Wa_Stream">2258db6693138310b29a796efaba10e8</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-16 18:49:11</sys_updated_on>
+        <ui_id>4567a1e5-8e10-458f-b658-3815ad303df5</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VXU/bMBT9K5Of28hpPkj7hkBISGxIgHjZUHTjj9bCibPYKWRV//uuk7RF0An28bi3+Nj3+pyTc5MNMa2rW2fvzKm1almRxdeHCVGVx/B5QxQnC0ImpIJS4BMzFVdOmQqhNejWY5sNnYtYRNHJdC7FfBoLmkyLmKfTlM/ZLMuopCdRcCOYaXjw2LHcOnCt3W6/tZRGfC0aJZXg2JIrW2vo7v99Z7ZSmjdiFFhDg3qcaMhi82qrFzyHRCYhTVg0S6MZpbMsDos0KsIZj0DEKTbUUAiNR89eOHLEJNfVHrKuUdVyXF+Npbc7ENl7KjM6IeLZiYoj5YUEbcWElFBxcKbpyMI1LQKNAH5d6W5/YqUqN7ykEp6t+iF8J0r9SSlQFxPD7n6ZjzYPsDwHB0ilZa5txqNsZRQTdnCECwmtdmcvseHAdd2r7EscFHpXbXRbVl8GM8i+we6tItJaJCFqr9RzH4XI25V5utmxvFBV78q4qQ0DvV+BQ++K1nk+GyK0KLFRXkJdo6N53Zi16ouRSxksNS4Cqc0TXupTHgDzxAM0FoILxM97+B4a5VV8xjZYjFmwuWWNqnfa+svJdkJsZ880WHvQiObm31vPcFA8assHe3xJ3+gUL16LUcZ2siGe1ZVZKnZZYXZR9m1nL30E4yQ9gVAkmQhpnGSySJMsysIEeITJlgkZoyopyHDOwuNRhehILPMeOAzw28Ej74/IB+59MyKfhuT/mtHvTEv4zrSMyIfGJUn+T8tfT4unWYBVLO//H9jOf7D+cFxG0y+U0PxohI7N04PP9MBq/zaYslh257HL3W/Nb3QYOT91B+jJNI9e9gHb/gS3HezHIAcAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes>timeFromCreateToActivate=10000</attributes>
+        <block display_value="">cead8cb693d78310b29a796efaba10db</block>
+        <comment>Check if bank account reference is present for KYC readiness</comment>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Folk Artist Onboarding &amp; NOC Engine">98ff5f19f69d461ba5c7b83fca89483a</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-16 16:39:09</sys_created_on>
+        <sys_id>6c25bc9d4a164e15b8307764db98639d</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Wa_Stream">2258db6693138310b29a796efaba10e8</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-16 18:49:11</sys_updated_on>
+        <ui_id>6c25bc9d-4a16-4e15-b830-7764db98639d</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VXW+bMBT9K5OfIwQh0CZvVbpIkfoxLVGlaarQxTaJVWMz27RlKP9910CSas3UrnvdGz72vT7ncA+0RNeuqp1d6wtrxUaR2ff7ERHKY/jcEsHIjJARUVByfKJaMeGEVgg9gqw91rZzw8FxlkUBrY3hygU5qIcMKNW1crvdcnVzu/58/WX9DcuYsJWE5u5j1XQrJMNDPdEKDPJy3JBZ+9tWR3wKSZFEYULjcRqPw3B8PonyNM6jMYuBT1JsKCHnEo/OXyg7IdY1lYesM0JthvXVULrag9owT2Ucjgh/dlwxjiQKkJaPSAmKgdOmITNnagRQNbtVsjmc2ArlerNLeLbiJ/edwtCfLDjqorzfPSyzwcoeLi7BAVKpqavNcJRutaDc9o4wXkAt3fwl1h+4rTqVXYmDXO6rtaxLddObQQ4N9m8OkdoiCV55pZ77IKRYbfXT1z3LhVCdK8Om1BTkYQUOvctr5/m0hEteYqOshKpCR7PK6EfRFSOXMthIXASF1E94qZ/WAKgnHqCxECwQv+zgOzDCq7jGNliMs2AzS42o9tq6y8luRGxj5xKsPWpEc7MftWfYKx60Zb09vqRrdIEXP/JBxm7UEs/qSm8EXSrrAGWvGrv0I5jScZLTKZtAlE54lOTncXh2lk5YPj1P4ykjw6gWIRTRlEanRxXiE2OZdcAxiK/DRd6OyDvufRWRT/3k/5nR36QleiMtA/KuuCTJ/7T8c1o8zRysoFn3H8B2/oP1wbgMpi8El+zkCJ3K072f6Z7V4W1QYbFs7bHl/vfkNxocOZ+6I/SkzYOXfcR2vwAfRhJa6AYAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes>timeFromCreateToActivate=10000</attributes>
+        <block display_value="">c6ad8cb693d78310b29a796efaba10f6</block>
+        <comment>Bank account not provided on artist record</comment>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Folk Artist Onboarding &amp; NOC Engine">98ff5f19f69d461ba5c7b83fca89483a</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>10</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-16 16:39:09</sys_created_on>
+        <sys_id>b3022592ecd9417faba9f04046829257</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Wa_Stream">2258db6693138310b29a796efaba10e8</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-16 18:49:11</sys_updated_on>
+        <ui_id>b3022592-ecd9-417f-aba9-f04046829257</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=98ff5f19f69d461ba5c7b83fca89483a"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=98ff5f19f69d461ba5c7b83fca89483a"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_98ff5f19f69d461ba5c7b83fca89483a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-16 16:39:18</sys_created_on>
+        <sys_id>71ad8cb693d78310b29a796efaba1090</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Wa_Stream" source="x_2015479_wa_str_0">2258db6693138310b29a796efaba10e8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Wa_Stream">2258db6693138310b29a796efaba10e8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-16 16:39:18</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_98ff5f19f69d461ba5c7b83fca89483a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-16 16:39:18</sys_created_on>
+        <sys_id>7dad8cb693d78310b29a796efaba1084</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Wa_Stream" source="x_2015479_wa_str_0">2258db6693138310b29a796efaba10e8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Wa_Stream">2258db6693138310b29a796efaba10e8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-16 16:39:18</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_98ff5f19f69d461ba5c7b83fca89483a"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_98ff5f19f69d461ba5c7b83fca89483a"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <allow_high_security_roles>false</allow_high_security_roles>
+        <annotation/>
+        <attributes>timeFromCreateToActivate=10000</attributes>
+        <authored_on_release_version>-1</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>folk_artist_onboarding__noc_engine</internal_name>
+        <label_cache>[{"name":"Created_1.current.artist_name","label":"Trigger - Record Created➛x_2015479_wa_str_0_artist Record➛Artist Name","type":"string","base_type":"string","usedInstances":{"1e84f8e4-dc52-43e4-b1e6-487c8ed86236":["log_message"],"72c8e425-ceb0-454a-857d-1116ae475972":["values"]},"attributes":{}},{"name":"Created_1.current.bank_account","label":"Trigger - Record Created➛x_2015479_wa_str_0_artist Record➛Bank Account","type":"string","base_type":"string","usedInstances":{"6c25bc9d-4a16-4e15-b830-7764db98639d":["condition"],"09e4e337-9fe9-4e05-b4d6-6d9c2880f073":["conditions"]},"attributes":{}},{"name":"09e4e337-9fe9-4e05-b4d6-6d9c2880f073.Record.kyc_status","label":"09e4e337-9fe9-4e05-b4d6-6d9c2880f073➛Record➛kyc_status","type":"string","base_type":"string","usedInstances":{"4567a1e5-8e10-458f-b658-3815ad303df5":["condition"]},"attributes":{}},{"name":"Created_1.current","label":"Trigger - Record Created➛x_2015479_wa_str_0_artist Record","type":"reference","base_type":"reference","usedInstances":{"b55ea1b9-74fe-492b-8021-e5cde10dc92c":["record"],"72c8e425-ceb0-454a-857d-1116ae475972":["values"],"7c921b81-f403-45af-9a83-4e205eef273a":["record"],"5ce41f6b-0c58-4819-89a6-01422e065e2a":["record"]},"attributes":{}}]</label_cache>
+        <master>true</master>
+        <name>Folk Artist Onboarding &amp; NOC Engine</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Folk Artist Onboarding &amp; NOC Engine">98ff5f19f69d461ba5c7b83fca89483a</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>draft</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-16 16:39:20</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9aadccb693d78310b29a796efaba106b</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Wa_Stream">2258db6693138310b29a796efaba10e8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-16 18:49:13</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=9aadccb693d78310b29a796efaba106b"/>
+    <sys_variable_value action="delete_multiple" query="document_key=9aadccb693d78310b29a796efaba106b"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=9aadccb693d78310b29a796efaba106b"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=9aadccb693d78310b29a796efaba106b^sys_idNOT INdeadccb693d78310b29a796efaba106d"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>9aadccb693d78310b29a796efaba106b</id>
+        <name>Folk Artist Onboarding &amp; NOC Engine</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-16 16:39:20</sys_created_on>
+        <sys_id>deadccb693d78310b29a796efaba106d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-16 16:39:20</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=deadccb693d78310b29a796efaba106d"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=9aadccb693d78310b29a796efaba106b^sys_idNOT IN1eadccb693d78310b29a796efaba108d,92adccb693d78310b29a796efaba1070"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Folk Artist Onboarding &amp; NOC Engine">9aadccb693d78310b29a796efaba106b</model>
+        <model_id>9aadccb693d78310b29a796efaba106b</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_9aadccb693d78310b29a796efaba106b</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-16 16:39:20</sys_created_on>
+        <sys_id>1eadccb693d78310b29a796efaba108d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Wa_Stream">2258db6693138310b29a796efaba10e8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-16 16:39:20</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=1eadccb693d78310b29a796efaba108d"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,timeFromCreateToActivate=10000,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Folk Artist Onboarding &amp; NOC Engine">9aadccb693d78310b29a796efaba106b</model>
+        <model_id>9aadccb693d78310b29a796efaba106b</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_9aadccb693d78310b29a796efaba106b</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-16 16:39:20</sys_created_on>
+        <sys_id>92adccb693d78310b29a796efaba1070</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Wa_Stream">2258db6693138310b29a796efaba10e8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-16 17:14:03</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=92adccb693d78310b29a796efaba1070"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=9aadccb693d78310b29a796efaba106b"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=9aadccb693d78310b29a796efaba106b"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=9aadccb693d78310b29a796efaba106b^sys_idNOT INeaadccb693d78310b29a796efaba10ca"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Folk Artist Onboarding &amp; NOC Engine">9aadccb693d78310b29a796efaba106b</flow>
+        <generation_source/>
+        <name>Created</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-16 16:39:21</sys_created_on>
+        <sys_id>eaadccb693d78310b29a796efaba10ca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-16 16:39:21</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/+1Y224TMRD9FWufQApSykWIvgGlUqRCJVrgoVQrZz2bWDh2sGeTLFX+nfFeEnezadM2Cwj1KfHY8ZyZOcce5+IqQitHI7AD7ZDrBM5yNxDRYRT1IsWHoOjrOR8qoLHUCFZzdZ5PgczozbHmEz8nYApagMbyp8nYyAROpKPxxWUvmnAtOBqbR4doM+hFqTWTc5hMFUfaK+XKkdFYATY6POj3e1Gxb+WENpxxlfnxIn7eP3j18vWbeM5jhzbux9yi90MYpKP98q87LE3GUgkLukQ35Za8ofd9tRF1Awi2BF/hJtSwQJ8GsQopCLyyWODiVKs8WLJw8hcUv88cxEEqqxXp2djMP0MKhDiBY6kLd9WkMglXqxFHqucwQ3AUy3K5SsqxBFWV1SVWTvFtgnJWp37Z24UHnzPNTjX7UMXIigy5TWKUxb+FFFcUFfzMfEBF5GldNs8PWpyeBF6NZklmKXpklE9WZ5lhjSAdTPgISje0r4IEgyKkX1w4+iidk3oUxL4FSjG/iUXlIaCaGA+BcNlGlF0lYjMdGx2vqLcWS42/IYzavIMItpZ8q29scOBf1UbExczzXNSU60As38ag2RlQqY3/RPQl37NchgbHTYqmxrJ3ZGcD74kX4AvhfDL6WWirsHWnIE3kkGuHIVBfZ1aj3QKsM1y7YKKtLds/qAdrfU6sit2KTbPrRGhovbLuKPUthN3u/FHtgeqUmRNf9i1wrvMNfXtPUpOkc5YYcrbAzpQy5MmPkTWZFttQrFewJwJSnil82t2VbCzcDOf6ir8pVI+ITr9Qo2Eym0oN53bU65pyrW4f1Vmm6r3RQmJ5dDe1WU+5Oz1i7siGJABQc8HooeFWEOHoccIxc9+zfv+FEJanLY+ZW1bvwJcwCS2wsCUfnfGlegPely5zrtHFaGIuRBwgXj0eJkaAOgqqWXGEZDHN0EXLoNbUv66edx21gEUn0VH/13Y9UPPirwZKuu3sIDYaYpO2Nk8yZVVy6MUwzBmOgTApOpZo5wJVlw2nL2gT2pFhNMHsHwG3nwbPI2np8spyNw6H0niXHq/ByFucP94jbek7Kf9Kaqh5pKSAWFX/SO39Qil4EEBrrVzlvebMJmHuw5Yq3JscYksK/kOuXP4GM5If2TYVAAA=</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=9aadccb693d78310b29a796efaba106b^sys_idNOT IN62adccb693d78310b29a796efaba10c7,66adccb693d78310b29a796efaba10c8,6aadccb693d78310b29a796efaba10c4,6eadccb693d78310b29a796efaba10c5,a2adccb693d78310b29a796efaba10c1,e2adccb693d78310b29a796efaba10c3,e6adccb693d78310b29a796efaba10c6,eaadccb693d78310b29a796efaba10c7"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
+        <action_type_parent display_value="Log">0e0ae8c2531003003bf1d9109ec587c8</action_type_parent>
+        <attributes>timeFromCreateToActivate=10000</attributes>
+        <comment/>
+        <compiled_snapshot>5bc1bcc6531003003bf1d9109ec587d4</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Folk Artist Onboarding &amp; NOC Engine">9aadccb693d78310b29a796efaba106b</flow>
+        <generation_source/>
+        <order>9</order>
+        <parent_ui_id>09f6c688-44c4-4569-8656-09c4253f3101</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-16 16:39:21</sys_created_on>
+        <sys_id>62adccb693d78310b29a796efaba10c7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Wa_Stream">2258db6693138310b29a796efaba10e8</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-16 17:14:04</sys_updated_on>
+        <ui_id>ae9943a6-e567-475e-aae7-23990e78cbc8</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VUXW/aMBT9K8jPgAg068rbBKs0rR/SkDpVVRXdODdgybEz24EyxH/fdWJC1LIPpL5N4uWeHPuec324TzumoEA2ZVIvE4lrlKzP1iArjwmVayozYUsJ24eAfmnQEgyddGjYdMf4SsjMoGLTp+c+ExnR4pRHKecf4kk0Gk3ol+ZRdhWNrpDHHy+zS7pCQkr9puwm9D0hxW1LD/GVFhxDfROOzQ6gNpmXMeozfHGoMqT+OUiLfVaAysBps20Rg5DdK3kEVkI5uo158osVP6nfxcjzciRHHJtvbZmEcTRwPgcHC2cq7ioTqI1YS7PYtRYHg96dVtgbDDrz7Ujf94/cMOBXrxCYUZf5HYwSatkhbwg5ksdd8mdjtOlQMdSBO9nTy2WYQyXd7HwH0T87GJ/jYHKGgwvvoBn+femEpjSyyGcGUnl4Gi2rQt01OWOt34dXgW/Q+cncV5YigKWPmc9NCFG+WOnNt0NGroWqFYWPUnOQbQXOGZFWzs93x1BiQRclBZQlDSIpjV6L+jCJLYZLScUwl3pDTa1YqiFwb21IqYbhNeHzGn4AI7zNW7qGDu/7zG7tTIK1R7MU4eRH5ZU01oOHpB5UfYQbUbpP1GCNQa4ff+dvWaC1sMTOG3x9nPX8RaS9l2vTA+OEdW+3xm95f9sj48mf9gjGnT1y26o7KTnsEkvjrxPX3SWLA3iI87vtknEcv88yOfX3fBv4s/L+/8X5+RcwZIKX8gYAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=62adccb693d78310b29a796efaba10c7"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
+        <action_type_parent display_value="Log">0e0ae8c2531003003bf1d9109ec587c8</action_type_parent>
+        <attributes>timeFromCreateToActivate=10000</attributes>
+        <comment/>
+        <compiled_snapshot>5bc1bcc6531003003bf1d9109ec587d4</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Folk Artist Onboarding &amp; NOC Engine">9aadccb693d78310b29a796efaba106b</flow>
+        <generation_source/>
+        <order>12</order>
+        <parent_ui_id>b3022592-ecd9-417f-aba9-f04046829257</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-16 16:39:21</sys_created_on>
+        <sys_id>66adccb693d78310b29a796efaba10c8</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Wa_Stream">2258db6693138310b29a796efaba10e8</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-16 17:14:04</sys_updated_on>
+        <ui_id>9c9c2972-9afa-41ba-8e72-f190afbb5396</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VUXY/aMBD8K5GfAyJw6fV4a6EnVb0PqUhU1ekUOfYGrDp2ajtwFPHfb01MiChqi3RvlfKyk7F3Z3e8T1uiaAlkTKReZBJWIElMVlTWHhOq0BhyYStJN/OAfm7Qiho86cCQ8ZawpZDcgCLjp+eYCI60NGdJzti7dJQMBiP88iLhN8ngBlj6/ppf4xWS5phvTO5C3jOluE3lIbbUgkGI78KxyQHUhvsyBjGBFweKA+YvqLQQk5IqTp02mxYxQPmjkkdgKZTD24gnv1jxC/NdDTyvAFTEoPnXhlloRwMXU+rozJmaudoEalOsxV5sW4m9XvSgFUS9Xqe/ndJ38ZEbGnwyhcBMusxv1CihFh3yGpEjedglfzJGmw4VQhy4ox1OjkNBa+kmlytI/lnB8BIFowsUXHkFTfMfKyc0upEk3jM0l4fRaFmX6qHxGWn1zk8M36DTs76vLVoAKm8z75tgomK21OuvB4/cCrWvKPyUmlHZRtQ5I/La+f5uCUgo8aKspFWFjcgqo1difxiLLfsLiUG/kHqNSa1YqD5lXlofXU37t4hP9/CcGuFl3uM1eHgXE7uxE0mtPYpFC2c/a19JIz1oyPaN2h9hRlTuAyZYQSjXt7/zLEuwli6gM4OPVP2IODgqpI2UdlEQwOPIgnMoKfryfRL5XM2cT7bJxef/tneGoz/tHUg7e+e+VXNWYtg9Fse1z9zdPbMDeLD/m+2eYZq+zfI595x/fyAXvY//z/7Pr6l7jXkiBwAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=66adccb693d78310b29a796efaba10c8"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes>timeFromCreateToActivate=10000</attributes>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Folk Artist Onboarding &amp; NOC Engine">9aadccb693d78310b29a796efaba106b</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id>4567a1e5-8e10-458f-b658-3815ad303df5</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-16 16:39:21</sys_created_on>
+        <sys_id>6aadccb693d78310b29a796efaba10c4</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Wa_Stream">2258db6693138310b29a796efaba10e8</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-16 17:14:04</sys_updated_on>
+        <ui_id>b55ea1b9-74fe-492b-8021-e5cde10dc92c</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+2UTU8bMRCG/wryOYp280Eht4oUqVILKlRcKLVm7UliyWsv/gDSKP+9493NsgIEOXAoUvfm8cz4fcfP+nrDDJTIZixAoZHXiwG7Ax1T8IGPsnw6+XTM74H74HjGwQXlA+VI5SsN66s9Uitw1DegY7MNEyulpUPDZtc3A6Yk1RZTmeXH+aEY5+PxKMtGR5O8OBwX+UiOAcUxtdBQoKbUn0kmrV9SHdbVi7Fv/dqDs2bDOpn0TLMBw4eARiIpWYD2OGAlGAnBujWbBRcp4BDkudHrLmOlTKCOLOU+ePWHzj3KUt4CyZrAZq9b8nZYTXgxhwCX1FmE6NpUsbJKoG+GInEBUYeTfqxJOK+CsqYpqX221VbH0pw1M2Fdg93dUCR6EoFV8pmUtzYWlyt7f7FTeapMPZN2U1sBultBCE4VMSQ9G4YaS2rES6gqZZa8cvZO1cWkpRwuNS2GC23v6VCvlmYIIgkf0lhheErxeR2+AqeSi+/Uhoq3A+bX/kSD949eaIj8NiYljbPWA2/GkEqEU1X4TAfcYSt3O+i4dijoqntMbzYndJ0BJc+HIjpyHrbb5zzvge0EX8MW8x62FzsVT1W1zEorYj1QJZ9AO293Dr7OH6nN343ayUeitrH14aHtPVBv4ltT63v4WlNYcDLp9wFC9L9ilo2lsYI7vI3Kofz95cdznveue4v6bPQq9dij/lShlv6R+s7M7qXGkiQG5I25J691u3lw1W527L8b/PlhVn//f4F/7xe4+QtpiKQZmwgAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=6aadccb693d78310b29a796efaba10c4"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes>timeFromCreateToActivate=10000</attributes>
+        <comment/>
+        <compiled_snapshot>2de05916c31332002841b63b12d3aee1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Folk Artist Onboarding &amp; NOC Engine">9aadccb693d78310b29a796efaba106b</flow>
+        <generation_source/>
+        <order>6</order>
+        <parent_ui_id>4567a1e5-8e10-458f-b658-3815ad303df5</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-16 16:39:21</sys_created_on>
+        <sys_id>6eadccb693d78310b29a796efaba10c5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Wa_Stream">2258db6693138310b29a796efaba10e8</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-16 17:14:04</sys_updated_on>
+        <ui_id>72c8e425-ceb0-454a-857d-1116ae475972</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/9VUTW/aQBD9K9GekWUDoQm3iJRTm6hNxSVNVoN3DCut187umI8i/ntnvYagNqg99ND4Nt/vzc7z405YKFGMBcHcoGyNnliBaYJzI/tpdjn8cC3XID05mUpb5dLhS4OeOFFpXxvYzv42vwbHEwidGO9EvtRGObRi/PjUE1pxg1GG6eV1NsoH2WDQT9P+1TCbjwbzrK8GgDjkFgbmaDj1WwDM9lv4aVu/6ft0WntxFwOVUwFP2hO4IbQKGUgBxmNPlGAVUOW2YkyuYYdDUPfWbI8ZS22JG4qQu/H6B4+9SkNegcwsxxg7mrJbWHQXt0DwwJ1zalyXmi8rnaOPO1FYQGNocuqLCfc16crGkpZmV12ZprR3cSXi2ODwPuxpPIPAOvAMyDsaxcOyWn89oJxq266kC5oqB3O0gMjpeUMBz06gwZIbyRLqWtuFrF210m0xYymThWEjKUy15qFeL2wCeQCe8FohmbL/tnXPwOnA4jO34eJ9T/itnxjw/pULL1G+NAFJZNZxkHENoSR3uqYbHrDCDu6+dzzw9qb9yXGDI+3pe5OmA7XbTfhpCZXMkrxxvAXa75/D7YaziTmV0wttwbRuT0CNjwHloKBnv6wcBZYtCuZ4tnMSJ7eHyVM+fvldSP8Vtj+KVmF6fVa02fxEtFONRvlX1R4f5aBYLHkNhDI+0i+q7YIXsy7YKTf7V8rNRmn7vSP9RnLvXr4nf+ozQn76CSBdY+mrBgAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=6eadccb693d78310b29a796efaba10c5"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
+        <action_type_parent display_value="Log">0e0ae8c2531003003bf1d9109ec587c8</action_type_parent>
+        <attributes>timeFromCreateToActivate=10000</attributes>
+        <comment/>
+        <compiled_snapshot>5bc1bcc6531003003bf1d9109ec587d4</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Folk Artist Onboarding &amp; NOC Engine">9aadccb693d78310b29a796efaba106b</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-16 16:39:21</sys_created_on>
+        <sys_id>a2adccb693d78310b29a796efaba10c1</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Wa_Stream">2258db6693138310b29a796efaba10e8</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-16 17:14:04</sys_updated_on>
+        <ui_id>1e84f8e4-dc52-43e4-b1e6-487c8ed86236</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VUUWvbMBD+K0bPjomTel3zNpIVBm0KC3QPpRhZPicCWfIkOWlm8t93shXHtGFbIG+DPESfP93dd/ruXhoiaQlkRoRapwK2IEhItlTUDuOyUHjMuakE3T979FuHVlTjTQuazBrCNlzkGiSZvbyGhOdISzIWZ4x9SqbxeDzFX1bE+V08vgOWfL7NbzGEoBnmm5EHn/dMKXZfOYhtFGfgzw/+2vwIKp27MsYhgTcLMgfMX1BhICQllTm1Su97RAPNn6Q4ARsuLUYjjvxm+C/MdzN2vAJQEYPuW39MfTs6uFhQS1dW18zW2lO7Yg32oukljkbBUkkIRqNBfwelH8IT1zf43St4Zjxk/qBacrkekHeInMiTIfmr1koPqODPnjs94MvlUNBa2PnlCuJ/VjC5RMH0AgU3TkHX/KfKcoVuJLHzDM3E8WmUqEu57HxGer3P7wzfoYuzvq8NWgAqZzPnG2+iYrVRu+9Hj9xz2VbkPwrFqOhP1FrNs9q6/jYEBJQYKC1pVWEj0kqrLW8vY7FltBZ4iAqhdpjU8LWMKHPSInQ1je4RX7TwM9XcyXzEMHj5EBKzN3NBjTmJRQunP2tXSSfda0jbRrVXmOaV/YIJtuDLde0fjGUJxtA1DN5gCbuAasuNDZTMFNU5qgiMRQzyWdA0cxw4/JvGEas1dsdGHT11YQ+Hj/vlChH/tpsm0z/tJkgGu+mxV3y2DX4/GXzS1sXD/bQ6gscRudp+miTJdRbUuZH/OEQXzdD/NyKvvwE6DoZMRgcAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=a2adccb693d78310b29a796efaba10c1"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes>timeFromCreateToActivate=10000</attributes>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Folk Artist Onboarding &amp; NOC Engine">9aadccb693d78310b29a796efaba106b</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>6c25bc9d-4a16-4e15-b830-7764db98639d</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-16 16:39:21</sys_created_on>
+        <sys_id>e2adccb693d78310b29a796efaba10c3</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Wa_Stream">2258db6693138310b29a796efaba10e8</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-16 17:14:04</sys_updated_on>
+        <ui_id>09e4e337-9fe9-4e05-b4d6-6d9c2880f073</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VYbW/aOhT+K1E+U27CW6DfrqiQJu2u0trbL9tkObZTrBk7s51Sivrf73HiBAQZlFuQNu0T8vGxz9vznBPzZR1KvGDhdWiUtsiuchZ2wicsikaGDQER5SYXePXgd3BgVfAC8hxrOG+ZDq/XIZlzQTWT4fWXb52QU1Ac0miSTSbDcRJF/X4UjUZ9guM07Y9IGqVpDFcInDIBqndgLbivPGhxqvy5BhuKk3r90R+d1kKlqXOl3wnZs2WSMvAhw8KwTrjAkmKr9KqRaIbprRQbwZxLC7eFTvnZ8Bew1+85vYxBVIRVe80S+aRU4uwGW3xndUFsob1q5ayBfKybMJvUtWTZux+9djb6L04f7+pTtn0gfoV8U5bhQtjp/7MZn2qz52xWAd7mliuoeth3dcGpqMNXoljIT1Utw8bDhxZ4VTs3P0FZYSDZLHcFdRXy5cru5mr5ua7GjMvSL78pFMGiWWFrNU8L6/KyDjOKMs4ERVwKLp0lKJuDDxNsARbQAuc5l48o1+qJl7dCLIvuo4BFNxNq6XLBH2UXExd5F4CFuzOQ35TiB6y5y8I/cA0c7jiDczjq7SFDNM8tWnL6yOzGeq1FlV1i8b1t3yMO1YUqwwtfO6FZmanAxmySDTBFPwqXgyr1PnuoLFR5pPTib4jgiflEOQx46hElKXfBmW0YrAzi9GsBXKbr9RQIZBlFcZcUGmpguymW3xEmRBXSvr7ut42Tzx9rL3R4qL3gyVZ7mW4H1BZk3WB2ZR/bLqhZc7ZGM4ii6Dytpq0V7FP1JKbuU9BB8h0MvAzRTudBlYKjZEDISAK8hGMZ5gLOIqa10lvUiPbRXpHzOIgJw+mgh0dJP46jKI5oEo2TJB6P0myEk0G2BeIbJR17eokNnCOBkkHtyHFXPcBTpQTDcgfd91DQv2beY4/u4RnR/Rth+73jpeD3u5muRK25vtTMKfi/kv8o2AcHsTGLeuOYkqtxEidXg4yOriYUD6/wJB0mfcrIILvMGKnqsKHJM+pF8XCQTNASI2M1ilDZ9CmzgNZ9Dh3VPzohJgcnxGCLXPfe1x3XPW3KJSr3dpjjNoJP1Ub9BXc25oz/JOZc7PuLC0AIqkpoVKHLVD4hIgpTbmgsTXXXRVjAM7SAxPEczGtGACQGYc1QBh86FHnDG5K4rGZcG+uV92nxmUGNJbR/sQrsnAWldtBoHyNFfJAU6fZn04csqF3395sAXA9K14PG9dMCPeUtN/jlhtDmnTRzM9jlH1CUbxWwnrht77kjpTuAgTc+9t7oVHxWp97/GmwDfeur8Iivv0VLukSTKZ/TVZL3G8ZbmsLBv2ow3WoKt67oQbra+aemMe75XT2yW0bmzG3sjMzenzkyf8mHVOdnf5Gc+YX17T9aBya2gBQAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=e2adccb693d78310b29a796efaba10c3"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes>timeFromCreateToActivate=10000</attributes>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Folk Artist Onboarding &amp; NOC Engine">9aadccb693d78310b29a796efaba106b</flow>
+        <generation_source/>
+        <order>8</order>
+        <parent_ui_id>09f6c688-44c4-4569-8656-09c4253f3101</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-16 16:39:21</sys_created_on>
+        <sys_id>e6adccb693d78310b29a796efaba10c6</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Wa_Stream">2258db6693138310b29a796efaba10e8</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-16 17:14:04</sys_updated_on>
+        <ui_id>7c921b81-f403-45af-9a83-4e205eef273a</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+2Uy27bMBBFf8Xg2hAkvxp7V9g1UKBN0KTIJk2JETm2iVKPkpQfNfzvHUqyLDhB4kUWDVDtOJwZ3js84sOepZAgmzAHsUZeLrpsDbrwwS3vhdFw8GHMN8CtMzzkYJyyjnKksrmG3f0FqTkY6uvQsMmeiZXS0mDKJg+PXaYk1cZDGUbjaCT6Ub/fC8Pe1SCKR/046sk+oBhTCw0xakr97mXS+jnVbpc/G/vSru1cVxuZkV7PMOwy3DpMJZKSBWiLXZZAKsFlZscmzhQUMAjyJtW7JmOlUkcdmc/dWvWHzr0Kfd4CyZrAaq9Z8npYVXgxAwd31Fm4wtSpYpUpgbYaisQFFNpN27Eq4SZ3KkurktJnXZ3pIkmvq5mwpsHxbihSWBKBuffpldc2FnerbHN7VDlXaTmTelNnAnSzAueMigvn9ewZakyoEU8gz1W65LnJ1qosJi1JsNS0CBY629ChVi3TAIQXHtBYIZhTfFaG78Eo7+IrtaHiQ5fZnZ1qsPbkhYbIfxdeSeWs9sCrMfgSYVTuPtIBa6zlHroN1wYFXXWL6f1+StfpUPIoEIUh5+5weMrzBdgO8CVsMWphe3tUca6qZlZmoigHquQZtLN6p/N5dqI2ejNqB++J2srWu4e29UC9im9JrW3hm6VxBkZ6/daBK+yPIgz78tdOcH8IxX9++vYU50vLXmM+7L3IPLaYnyvU0p6Yb6wc32lMSKFDXlk7e6vrzc59vdmQ/2boR6Ow/P7/AP/eD/D4FxHvutOZCAAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=e6adccb693d78310b29a796efaba10c6"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes>timeFromCreateToActivate=10000</attributes>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Folk Artist Onboarding &amp; NOC Engine">9aadccb693d78310b29a796efaba106b</flow>
+        <generation_source/>
+        <order>11</order>
+        <parent_ui_id>b3022592-ecd9-417f-aba9-f04046829257</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-16 16:39:21</sys_created_on>
+        <sys_id>eaadccb693d78310b29a796efaba10c7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Wa_Stream">2258db6693138310b29a796efaba10e8</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-16 17:14:04</sys_updated_on>
+        <ui_id>5ce41f6b-0c58-4819-89a6-01422e065e2a</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+2Uy27bMBBFf8Xg2hAkvxp7V9g1UKBN0KTIJk2JETm2iVKPkpQfNfzvHUqyLDhB4kUWDVDtOJwZ3js84sOepZAgmzAHsUZeLrpsDbrwwS3vhdFw8GHMN8CtMzzkYJyyjnKksrmG3f0FqTkY6uvQsMmeiZXS0mDKJg+PXaYk1cZDGUbjaCT6Ub/fC8Pe1SCKR/046sk+oBhTCw0xakr97mXS+jnVbpc/G/vSru1cVxuZkV7PMOwy3DpMJZKSBWiLXZZAKsFlZscmzhQUMAjyJtW7JmOlUkcdmc/dWvWHzr0Kfd4CyZrAaq9Z8npYVXgxAwd31Fm4wtSpYpUpgbYaisQFFNpN27Eq4SZ3KkurktJnXZ3pIkmvq5mwpsHxbihSWBKBuffpldc2FnerbHN7VDlXaTmTelNnAnSzAueMigvn9ewZakyoEU8gz1W65LnJ1qosJi1JsNS0CBY629ChVi3TAIQXHtBYIZhTfFaG78Eo7+IrtaHiQ5fZnZ1qsPbkhYbIfxdeSeWs9sCrMfgSYVTuPtIBa6zlHroN1wYFXXWL6f1+StfpUPIoEIUh5+5weMrzBdgO8CVsMWphe3tUca6qZlZmoigHquQZtLN6p/N5dqI2ejNqB++J2srWu4e29UC9im9JrW3hm6VxBkZ6/daBK+yPIgz78tdOcH8IxX9++vYU50vLXmM+7L3IPLaYnyvU0p6Yb6wc32lMSKFDXlk7e6vrzc59vdmQ/2boR6Ow/P7/AP/eD/D4FxHvutOZCAAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=eaadccb693d78310b29a796efaba10c7"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=9aadccb693d78310b29a796efaba106b"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=9aadccb693d78310b29a796efaba106b^sys_idNOT IN66adccb693d78310b29a796efaba10ba,e2adccb693d78310b29a796efaba10be,eaadccb693d78310b29a796efaba10bc,eaadccb693d78310b29a796efaba10bf"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes>timeFromCreateToActivate=10000</attributes>
+        <block display_value="">cead8cb693d78310b29a796efaba10db</block>
+        <comment>Check if bank account reference is present for KYC readiness</comment>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Folk Artist Onboarding &amp; NOC Engine">9aadccb693d78310b29a796efaba106b</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-16 16:39:21</sys_created_on>
+        <sys_id>66adccb693d78310b29a796efaba10ba</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_scope display_value="Wa_Stream">2258db6693138310b29a796efaba10e8</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-16 18:49:13</sys_updated_on>
+        <ui_id>6c25bc9d-4a16-4e15-b830-7764db98639d</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VXW+bMBT9K5OfIwQh0CZvVbpIkfoxLVGlaarQxTaJVWMz27RlKP9910CSas3UrnvdGz72vT7ncA+0RNeuqp1d6wtrxUaR2ff7ERHKY/jcEsHIjJARUVByfKJaMeGEVgg9gqw91rZzw8FxlkUBrY3hygU5qIcMKNW1crvdcnVzu/58/WX9DcuYsJWE5u5j1XQrJMNDPdEKDPJy3JBZ+9tWR3wKSZFEYULjcRqPw3B8PonyNM6jMYuBT1JsKCHnEo/OXyg7IdY1lYesM0JthvXVULrag9owT2Ucjgh/dlwxjiQKkJaPSAmKgdOmITNnagRQNbtVsjmc2ArlerNLeLbiJ/edwtCfLDjqorzfPSyzwcoeLi7BAVKpqavNcJRutaDc9o4wXkAt3fwl1h+4rTqVXYmDXO6rtaxLddObQQ4N9m8OkdoiCV55pZ77IKRYbfXT1z3LhVCdK8Om1BTkYQUOvctr5/m0hEteYqOshKpCR7PK6EfRFSOXMthIXASF1E94qZ/WAKgnHqCxECwQv+zgOzDCq7jGNliMs2AzS42o9tq6y8luRGxj5xKsPWpEc7MftWfYKx60Zb09vqRrdIEXP/JBxm7UEs/qSm8EXSrrAGWvGrv0I5jScZLTKZtAlE54lOTncXh2lk5YPj1P4ykjw6gWIRTRlEanRxXiE2OZdcAxiK/DRd6OyDvufRWRT/3k/5nR36QleiMtA/KuuCTJ/7T8c1o8zRysoFn3H8B2/oP1wbgMpi8El+zkCJ3K072f6Z7V4W1QYbFs7bHl/vfkNxocOZ+6I/SkzYOXfcR2vwAfRhJa6AYAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes>timeFromCreateToActivate=10000</attributes>
+        <block display_value="">42ad8cb693d78310b29a796efaba10f3</block>
+        <comment>KYC status is not verified</comment>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Folk Artist Onboarding &amp; NOC Engine">9aadccb693d78310b29a796efaba106b</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <parent_ui_id>6c25bc9d-4a16-4e15-b830-7764db98639d</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-16 16:39:21</sys_created_on>
+        <sys_id>e2adccb693d78310b29a796efaba10be</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_scope display_value="Wa_Stream">2258db6693138310b29a796efaba10e8</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-16 18:49:13</sys_updated_on>
+        <ui_id>09f6c688-44c4-4569-8656-09c4253f3101</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes>timeFromCreateToActivate=10000</attributes>
+        <block display_value="">cead8cb693d78310b29a796efaba10ed</block>
+        <comment>Check if KYC status is verified on bank detail</comment>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Folk Artist Onboarding &amp; NOC Engine">9aadccb693d78310b29a796efaba106b</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <parent_ui_id>6c25bc9d-4a16-4e15-b830-7764db98639d</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-16 16:39:21</sys_created_on>
+        <sys_id>eaadccb693d78310b29a796efaba10bc</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_scope display_value="Wa_Stream">2258db6693138310b29a796efaba10e8</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-16 18:49:13</sys_updated_on>
+        <ui_id>4567a1e5-8e10-458f-b658-3815ad303df5</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VXU/bMBT9K5Of28hpPkj7hkBISGxIgHjZUHTjj9bCibPYKWRV//uuk7RF0An28bi3+Nj3+pyTc5MNMa2rW2fvzKm1almRxdeHCVGVx/B5QxQnC0ImpIJS4BMzFVdOmQqhNejWY5sNnYtYRNHJdC7FfBoLmkyLmKfTlM/ZLMuopCdRcCOYaXjw2LHcOnCt3W6/tZRGfC0aJZXg2JIrW2vo7v99Z7ZSmjdiFFhDg3qcaMhi82qrFzyHRCYhTVg0S6MZpbMsDos0KsIZj0DEKTbUUAiNR89eOHLEJNfVHrKuUdVyXF+Npbc7ENl7KjM6IeLZiYoj5YUEbcWElFBxcKbpyMI1LQKNAH5d6W5/YqUqN7ykEp6t+iF8J0r9SSlQFxPD7n6ZjzYPsDwHB0ilZa5txqNsZRQTdnCECwmtdmcvseHAdd2r7EscFHpXbXRbVl8GM8i+we6tItJaJCFqr9RzH4XI25V5utmxvFBV78q4qQ0DvV+BQ++K1nk+GyK0KLFRXkJdo6N53Zi16ouRSxksNS4Cqc0TXupTHgDzxAM0FoILxM97+B4a5VV8xjZYjFmwuWWNqnfa+svJdkJsZ880WHvQiObm31vPcFA8assHe3xJ3+gUL16LUcZ2siGe1ZVZKnZZYXZR9m1nL30E4yQ9gVAkmQhpnGSySJMsysIEeITJlgkZoyopyHDOwuNRhehILPMeOAzw28Ej74/IB+59MyKfhuT/mtHvTEv4zrSMyIfGJUn+T8tfT4unWYBVLO//H9jOf7D+cFxG0y+U0PxohI7N04PP9MBq/zaYslh257HL3W/Nb3QYOT91B+jJNI9e9gHb/gS3HezHIAcAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes>timeFromCreateToActivate=10000</attributes>
+        <block display_value="">c6ad8cb693d78310b29a796efaba10f6</block>
+        <comment>Bank account not provided on artist record</comment>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Folk Artist Onboarding &amp; NOC Engine">9aadccb693d78310b29a796efaba106b</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>10</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-16 16:39:21</sys_created_on>
+        <sys_id>eaadccb693d78310b29a796efaba10bf</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_scope display_value="Wa_Stream">2258db6693138310b29a796efaba10e8</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-16 18:49:13</sys_updated_on>
+        <ui_id>b3022592-ecd9-417f-aba9-f04046829257</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=9aadccb693d78310b29a796efaba106b"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=9aadccb693d78310b29a796efaba106b"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_9aadccb693d78310b29a796efaba106b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-16 16:39:20</sys_created_on>
+        <sys_id>d2adccb693d78310b29a796efaba1089</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Wa_Stream" source="x_2015479_wa_str_0">2258db6693138310b29a796efaba10e8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Wa_Stream">2258db6693138310b29a796efaba10e8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-16 16:39:20</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_9aadccb693d78310b29a796efaba106b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-16 16:39:20</sys_created_on>
+        <sys_id>deadccb693d78310b29a796efaba10a0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Wa_Stream" source="x_2015479_wa_str_0">2258db6693138310b29a796efaba10e8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Wa_Stream">2258db6693138310b29a796efaba10e8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-16 16:39:20</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_9aadccb693d78310b29a796efaba106b"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_9aadccb693d78310b29a796efaba106b"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>98ff5f19f69d461ba5c7b83fca89483a</sys_id>
+        <latest_snapshot>9aadccb693d78310b29a796efaba106b</latest_snapshot>
+        <compiler_build/>
+        <version_record/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=98ff5f19f69d461ba5c7b83fca89483a^sys_idNOT INbaad00f693d78310b29a796efaba1031"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan/>
+        <plan_id>98ff5f19f69d461ba5c7b83fca89483a</plan_id>
+        <snapshot>9aadccb693d78310b29a796efaba106b</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-16 16:39:22</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>baad00f693d78310b29a796efaba1031</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-16 18:49:14</sys_updated_on>
+        <trigger display_value="">8d6bec7e93db8310b29a796efaba10ce</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=98ff5f19f69d461ba5c7b83fca89483a"/>
+</record_update>
