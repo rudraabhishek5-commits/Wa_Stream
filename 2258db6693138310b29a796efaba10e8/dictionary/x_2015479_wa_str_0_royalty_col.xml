@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="2a833c2197204ae280a19d346695ac16" label="Royalty Collection Log" name="x_2015479_wa_str_0_royalty_col" type="collection">
+        <element default="pending" label="Collection Status" name="collection_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Reconciled" sequence="4" value="reconciled"/>
+                <element inactive_on_update="false" label="Disputed" sequence="3" value="disputed"/>
+                <element inactive_on_update="false" label="Collected" sequence="2" value="collected"/>
+                <element inactive_on_update="false" label="Pending" sequence="1" value="pending"/>
+            </choice>
+        </element>
+        <element label="Collection Period" name="collection_period" type="string"/>
+        <element label="Gross Amount" name="gross_amount" type="decimal"/>
+        <element display="true" label="Song" mandatory="true" name="song" reference="x_2015479_wa_str_0_song" type="reference"/>
+        <element label="Platform" name="platform" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="YouTube Music" sequence="3" value="youtube_music"/>
+                <element inactive_on_update="false" label="Hungama" sequence="8" value="hungama"/>
+                <element inactive_on_update="false" label="Resso" sequence="9" value="resso"/>
+                <element inactive_on_update="false" label="Apple Music" sequence="2" value="apple_music"/>
+                <element inactive_on_update="false" label="JioSaavn" sequence="4" value="jiosaavn"/>
+                <element inactive_on_update="false" label="Spotify" sequence="1" value="spotify"/>
+                <element inactive_on_update="false" label="Gaana" sequence="5" value="gaana"/>
+                <element inactive_on_update="false" label="Amazon Music" sequence="7" value="amazon_music"/>
+                <element inactive_on_update="false" label="Wynk" sequence="6" value="wynk"/>
+            </choice>
+        </element>
+        <element label="Net Amount" name="net_amount" type="decimal"/>
+        <element label="Collected On" name="collected_on" type="glide_date"/>
+        <element label="Stream Count" name="stream_count" type="integer"/>
+        <element default="INR" label="Currency" max_length="3" name="currency" type="string"/>
+        <index name="index">
+            <element name="song"/>
+        </index>
+    </element>
+</database>

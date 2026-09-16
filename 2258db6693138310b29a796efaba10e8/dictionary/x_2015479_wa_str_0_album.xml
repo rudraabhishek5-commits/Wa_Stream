@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="4f143e5e8fb74aa88453a23fbe619dfb" label="Album/EP" name="x_2015479_wa_str_0_album" type="collection">
+        <element label="Label" name="label" reference="x_2015479_wa_str_0_label" type="reference"/>
+        <element label="UPC Code" max_length="14" name="upc" type="string"/>
+        <element default="draft" label="Album Status" name="album_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Under Review" sequence="2" value="under_review"/>
+                <element inactive_on_update="false" label="Draft" sequence="1" value="draft"/>
+                <element inactive_on_update="false" label="Live" sequence="5" value="live"/>
+                <element inactive_on_update="false" label="Approved" sequence="3" value="approved"/>
+                <element inactive_on_update="false" label="Taken Down" sequence="6" value="taken_down"/>
+                <element inactive_on_update="false" label="Distributing" sequence="4" value="distributing"/>
+            </choice>
+        </element>
+        <element default="0" label="Track Count" name="track_count" read_only="true" read_only_option="instance_configured" type="integer"/>
+        <element label="Primary Artist" name="primary_artist" reference="x_2015479_wa_str_0_artist" type="reference"/>
+        <element display="true" label="Album Title" mandatory="true" name="album_title" type="string"/>
+        <element label="Release Type" name="release_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Single" sequence="1" value="single"/>
+                <element inactive_on_update="false" label="Album" sequence="3" value="album"/>
+                <element inactive_on_update="false" label="Compilation" sequence="4" value="compilation"/>
+                <element inactive_on_update="false" label="EP" sequence="2" value="ep"/>
+            </choice>
+        </element>
+        <element label="Release Date" name="release_date" type="glide_date"/>
+        <index name="index">
+            <element name="label"/>
+        </index>
+        <index name="index2">
+            <element name="primary_artist"/>
+        </index>
+    </element>
+</database>

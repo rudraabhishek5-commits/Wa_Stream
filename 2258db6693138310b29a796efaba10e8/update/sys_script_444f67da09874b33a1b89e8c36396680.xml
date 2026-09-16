@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_2015479_wa_str_0_contributor</collection>
+        <condition/>
+        <description>Validates that royalty split percentage is between 0 and 100, and warns if total splits for the song do not sum to 100%.</description>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Royalty Split Validation</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function () {
+    var splitPct = parseFloat(current.getValue('royalty_split_pct'));
+
+    // Validate individual split is between 0 and 100
+    if (isNaN(splitPct) || splitPct < 0 || splitPct > 100) {
+        gs.addErrorMessage(
+            'Royalty split percentage must be between 0 and 100. Current value: ' + current.getValue('royalty_split_pct')
+        );
+        current.setAbortAction(true);
+        return;
+    }
+
+    // Check total splits for the song (warn if not 100)
+    var songSysId = current.getValue('song');
+    if (songSysId) {
+        var contribGr = new GlideRecord('x_2015479_wa_str_0_contributor');
+        contribGr.addQuery('song', songSysId);
+
+        // Exclude the current record on update to avoid double-counting
+        var currentSysId = current.getUniqueValue();
+        if (currentSysId) {
+            contribGr.addQuery('sys_id', '!=', currentSysId);
+        }
+        contribGr.query();
+
+        var totalSplit = splitPct;
+        while (contribGr.next()) {
+            totalSplit += parseFloat(contribGr.getValue('royalty_split_pct')) || 0;
+        }
+
+        if (Math.abs(totalSplit - 100) > 0.01) {
+            gs.addInfoMessage(
+                'Warning: Total royalty splits for this song = ' +
+                    totalSplit.toFixed(2) +
+                    '%. Splits should sum to 100%.'
+            );
+        }
+    }
+})();
+]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-16 16:18:40</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>444f67da09874b33a1b89e8c36396680</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Royalty Split Validation</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Wa_Stream" source="x_2015479_wa_str_0">2258db6693138310b29a796efaba10e8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Wa_Stream">2258db6693138310b29a796efaba10e8</sys_scope>
+        <sys_update_name>sys_script_444f67da09874b33a1b89e8c36396680</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-16 16:18:40</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=444f67da09874b33a1b89e8c36396680"/>
+</record_update>

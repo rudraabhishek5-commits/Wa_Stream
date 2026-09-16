@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_portal">
+    <sp_portal action="INSERT_OR_UPDATE">
+        <alternate_portal/>
+        <communication_channels/>
+        <css_variables/>
+        <dark_theme/>
+        <default>false</default>
+        <embeddable_macroponents/>
+        <enable_ais>false</enable_ais>
+        <enable_certificate_based_authentication>false</enable_certificate_based_authentication>
+        <enable_embeddables>false</enable_embeddables>
+        <enable_favorites>false</enable_favorites>
+        <hide_portal_name>false</hide_portal_name>
+        <homepage display_value="x_2015479_wa_str_0_home">4aac3ab28dbd4dd7bb18bf8b20d35dd3</homepage>
+        <icon/>
+        <inactive>false</inactive>
+        <kb_knowledge_base/>
+        <kb_knowledge_page/>
+        <login_page/>
+        <logo/>
+        <logo_alt_text/>
+        <notfound_page/>
+        <quick_start_config/>
+        <rtl_enabled>false</rtl_enabled>
+        <sc_catalog/>
+        <sc_catalog_page/>
+        <sc_category_page/>
+        <search_application/>
+        <search_results_configuration/>
+        <sp_chat_queue/>
+        <sp_rectangle_menu/>
+        <sys_class_name>sp_portal</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-16 17:22:43</sys_created_on>
+        <sys_id>ade2938bf02d4767a8901f41c9289032</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Music Studio Artist Portal</sys_name>
+        <sys_package display_value="Wa_Stream" source="x_2015479_wa_str_0">2258db6693138310b29a796efaba10e8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Wa_Stream">2258db6693138310b29a796efaba10e8</sys_scope>
+        <sys_update_name>sp_portal_ade2938bf02d4767a8901f41c9289032</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-16 17:22:43</sys_updated_on>
+        <theme display_value="Coral">281507c44317d210ca4c1f425db8f2fd</theme>
+        <title>Music Studio Artist Portal</title>
+        <ts_index_group/>
+        <url_suffix>x_2015479_wa_str_0</url_suffix>
+    </sp_portal>
+    <sys_translated_text action="delete_multiple" query="documentkey=ade2938bf02d4767a8901f41c9289032"/>
+</record_update>

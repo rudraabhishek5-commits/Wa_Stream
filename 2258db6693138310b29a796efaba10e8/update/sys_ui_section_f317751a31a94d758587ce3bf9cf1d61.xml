@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Biography" section_id="f317751a31a94d758587ce3bf9cf1d61" sys_domain="global" table="x_2015479_wa_str_0_artist" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>bio</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-09-16 18:48:58</sys_created_on>
+            <sys_id>122ab0b4341f49898936e7bf90c7de84</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Biography" display_value="Biography" name="x_2015479_wa_str_0_artist" sys_domain="global" view="Default view">f317751a31a94d758587ce3bf9cf1d61</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-09-16 18:48:58</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Biography</caption>
+            <header>false</header>
+            <name>x_2015479_wa_str_0_artist</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-09-16 17:33:54</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f317751a31a94d758587ce3bf9cf1d61</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_2015479_wa_str_0_artist</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Wa_Stream" source="x_2015479_wa_str_0">2258db6693138310b29a796efaba10e8</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Wa_Stream">2258db6693138310b29a796efaba10e8</sys_scope>
+            <sys_update_name>sys_ui_section_f317751a31a94d758587ce3bf9cf1d61</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-09-16 17:33:54</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

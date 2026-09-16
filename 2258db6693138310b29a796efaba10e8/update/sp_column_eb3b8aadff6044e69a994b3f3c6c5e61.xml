@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_column">
+    <sp_column action="INSERT_OR_UPDATE">
+        <aria_label/>
+        <class_name/>
+        <order>100</order>
+        <semantic_tag/>
+        <size>12</size>
+        <size_lg/>
+        <size_sm>12</size_sm>
+        <size_xs>12</size_xs>
+        <sp_row display_value="100">18071d639e474c47931a504367202ac5</sp_row>
+        <sys_class_name>sp_column</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-16 17:22:42</sys_created_on>
+        <sys_id>eb3b8aadff6044e69a994b3f3c6c5e61</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>100</sys_name>
+        <sys_package display_value="Wa_Stream" source="x_2015479_wa_str_0">2258db6693138310b29a796efaba10e8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Wa_Stream">2258db6693138310b29a796efaba10e8</sys_scope>
+        <sys_update_name>sp_column_eb3b8aadff6044e69a994b3f3c6c5e61</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-16 17:22:42</sys_updated_on>
+    </sp_column>
+</record_update>

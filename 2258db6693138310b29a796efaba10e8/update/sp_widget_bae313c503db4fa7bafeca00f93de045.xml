@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller = function () {
+    var c = this;
+
+    c.refresh = function () {
+        c.server.update().then(function (response) {
+            c.data.totalSongs = response.data.totalSongs;
+            c.data.totalArtists = response.data.totalArtists;
+            c.data.totalAlbums = response.data.totalAlbums;
+            c.data.pendingDistributions = response.data.pendingDistributions;
+        });
+    };
+};
+]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.dashboard-container {
+  padding: 20px 0;
+}
+
+.dashboard-title {
+  margin-bottom: 25px;
+  font-weight: 300;
+  color: #333;
+}
+
+.stat-card {
+  border-radius: 4px;
+  margin-bottom: 20px;
+  transition: box-shadow 0.2s ease;
+}
+
+.stat-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.stat-card .panel-body {
+  padding: 25px 15px;
+}
+
+.stat-icon {
+  font-size: 36px;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.stat-number {
+  font-size: 32px;
+  font-weight: 600;
+  margin: 0 0 5px 0;
+  color: #333;
+}
+
+.stat-label {
+  font-size: 14px;
+  color: #777;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>x_2015479_wa_str_0_dashboard</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+}]]></link>
+        <name>Music Studio Dashboard</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function () {
+    // Total Songs
+    var songGR = new GlideRecord('x_2015479_wa_str_0_song');
+    songGR.addActiveQuery();
+    songGR.setLimit(10000);
+    songGR.query();
+    data.totalSongs = songGR.getRowCount();
+
+    // Total Artists
+    var artistGR = new GlideRecord('x_2015479_wa_str_0_artist');
+    artistGR.addActiveQuery();
+    artistGR.setLimit(10000);
+    artistGR.query();
+    data.totalArtists = artistGR.getRowCount();
+
+    // Total Albums
+    var albumGR = new GlideRecord('x_2015479_wa_str_0_album');
+    albumGR.addActiveQuery();
+    albumGR.setLimit(10000);
+    albumGR.query();
+    data.totalAlbums = albumGR.getRowCount();
+
+    // Pending Distributions
+    var distGR = new GlideRecord('x_2015479_wa_str_0_distrib');
+    distGR.addQuery('dist_status', 'pending');
+    distGR.setLimit(10000);
+    distGR.query();
+    data.pendingDistributions = distGR.getRowCount();
+})();
+]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-16 17:22:43</sys_created_on>
+        <sys_id>bae313c503db4fa7bafeca00f93de045</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Music Studio Dashboard</sys_name>
+        <sys_package display_value="Wa_Stream" source="x_2015479_wa_str_0">2258db6693138310b29a796efaba10e8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Wa_Stream">2258db6693138310b29a796efaba10e8</sys_scope>
+        <sys_update_name>sp_widget_bae313c503db4fa7bafeca00f93de045</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-16 17:22:43</sys_updated_on>
+        <template><![CDATA[<div class="dashboard-container">
+  <h2 class="dashboard-title">Music Studio Dashboard</h2>
+  <div class="row">
+    <!-- Total Songs -->
+    <div class="col-sm-6 col-md-3">
+      <div class="panel panel-default stat-card">
+        <div class="panel-body text-center">
+          <span class="fa fa-music stat-icon text-primary"></span>
+          <h3 class="stat-number">{{c.data.totalSongs}}</h3>
+          <p class="stat-label">Total Songs</p>
+        </div>
+      </div>
+    </div>
+    <!-- Total Artists -->
+    <div class="col-sm-6 col-md-3">
+      <div class="panel panel-default stat-card">
+        <div class="panel-body text-center">
+          <span class="fa fa-users stat-icon text-success"></span>
+          <h3 class="stat-number">{{c.data.totalArtists}}</h3>
+          <p class="stat-label">Total Artists</p>
+        </div>
+      </div>
+    </div>
+    <!-- Total Albums -->
+    <div class="col-sm-6 col-md-3">
+      <div class="panel panel-default stat-card">
+        <div class="panel-body text-center">
+          <span class="fa fa-folder-open stat-icon text-info"></span>
+          <h3 class="stat-number">{{c.data.totalAlbums}}</h3>
+          <p class="stat-label">Total Albums</p>
+        </div>
+      </div>
+    </div>
+    <!-- Pending Distributions -->
+    <div class="col-sm-6 col-md-3">
+      <div class="panel panel-default stat-card">
+        <div class="panel-body text-center">
+          <span class="fa fa-clock-o stat-icon text-warning"></span>
+          <h3 class="stat-number">{{c.data.pendingDistributions}}</h3>
+          <p class="stat-label">Pending Distributions</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+]]></template>
+    </sp_widget>
+</record_update>

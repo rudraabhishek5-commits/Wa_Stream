@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="17e145bc63d8451e87d91d26f7b845fc" label="Song Contributor" name="x_2015479_wa_str_0_contributor" type="collection">
+        <element label="Is Primary" name="is_primary" type="boolean"/>
+        <element label="Artist" mandatory="true" name="artist" reference="x_2015479_wa_str_0_artist" type="reference"/>
+        <element label="Contribution Type" name="contribution_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Singer" sequence="1" value="singer"/>
+                <element inactive_on_update="false" label="Featured Artist" sequence="5" value="featured_artist"/>
+                <element inactive_on_update="false" label="Producer" sequence="4" value="producer"/>
+                <element inactive_on_update="false" label="Musician" sequence="6" value="musician"/>
+                <element inactive_on_update="false" label="Composer" sequence="3" value="composer"/>
+                <element inactive_on_update="false" label="Lyricist" sequence="2" value="lyricist"/>
+            </choice>
+        </element>
+        <element display="true" label="Song" mandatory="true" name="song" reference="x_2015479_wa_str_0_song" type="reference"/>
+        <element label="Royalty Split %" name="royalty_split_pct" type="decimal"/>
+        <index name="index">
+            <element name="artist"/>
+        </index>
+        <index name="index2">
+            <element name="song"/>
+        </index>
+    </element>
+</database>

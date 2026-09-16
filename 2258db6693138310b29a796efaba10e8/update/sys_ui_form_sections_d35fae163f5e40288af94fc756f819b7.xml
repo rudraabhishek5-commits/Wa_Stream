@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="d35fae163f5e40288af94fc756f819b7" sys_domain="global" table="x_2015479_wa_str_0_distrib" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-09-16 18:48:54</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e7ec280776394506a1672df3d79fabfe</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_2015479_wa_str_0_distrib" name="x_2015479_wa_str_0_distrib" sys_domain="global" view="Default view">d35fae163f5e40288af94fc756f819b7</sys_ui_form>
+            <sys_ui_section caption="General" display_value="General" name="x_2015479_wa_str_0_distrib" sys_domain="global" view="Default view">a8648ba94ec841f6882bf22d69cd275d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-09-16 18:48:54</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-09-16 18:48:54</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>720c45d268b04f7d9aa7d70e778dc307</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_2015479_wa_str_0_distrib" name="x_2015479_wa_str_0_distrib" sys_domain="global" view="Default view">d35fae163f5e40288af94fc756f819b7</sys_ui_form>
+            <sys_ui_section caption="Delivery Details" display_value="Delivery Details" name="x_2015479_wa_str_0_distrib" sys_domain="global" view="Default view">1ca5ba1bc6b64e41b639b1d2482d9c5e</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-09-16 18:48:54</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_2015479_wa_str_0_distrib</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-09-16 17:33:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d35fae163f5e40288af94fc756f819b7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_2015479_wa_str_0_distrib</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Wa_Stream" source="x_2015479_wa_str_0">2258db6693138310b29a796efaba10e8</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Wa_Stream">2258db6693138310b29a796efaba10e8</sys_scope>
+            <sys_update_name>sys_ui_form_sections_d35fae163f5e40288af94fc756f819b7</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-09-16 17:33:50</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="f830e13d6cb741cd81b7e28336e8e733" label="Bank Detail" name="x_2015479_wa_str_0_bank_detail" type="collection">
+        <element label="Artist" name="artist" reference="x_2015479_wa_str_0_artist" type="reference"/>
+        <element label="UPI ID" name="upi_id" type="string"/>
+        <element label="Account Number" name="account_number" type="string"/>
+        <element display="true" label="Account Holder Name" name="account_holder" type="string"/>
+        <element label="IFSC Code" max_length="11" name="ifsc_code" type="string"/>
+        <element default="pending" label="KYC Status" name="kyc_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Pending" sequence="1" value="pending"/>
+                <element inactive_on_update="false" label="Rejected" sequence="3" value="rejected"/>
+                <element inactive_on_update="false" label="Verified" sequence="2" value="verified"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="artist"/>
+        </index>
+    </element>
+</database>
